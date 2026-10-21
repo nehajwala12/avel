@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light">
-<meta name="robots" content="noindex, nofollow">
 <title>Avel Diagnostic Preview</title>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="description" content="CreditSwan Phase 1 diagnostic preview for Avel eCare, second edition, 20 October 2026.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
@@ -173,6 +168,8 @@ hr.cs-rule{border:0;border-top:1px solid var(--cs-border);margin:48px 0}
 .cs-exhibit-sub{font-size:14px;color:var(--cs-text-soft);margin:0}
 .cs-exhibit-body{position:relative}
 .cs-exhibit-body svg{display:block;width:100%;height:auto}
+.cs-badge{font-style:normal;display:inline-block;margin-left:10px;padding:1px 7px;border:1px solid var(--cs-border-strong);border-radius:3px;color:var(--cs-text-soft);font-size:9.5px;letter-spacing:1.2px;vertical-align:1px}
+.cs-badge--new{border-color:var(--cs-label);color:var(--cs-label)}
 .cs-basis{margin-top:12px;font-family:var(--cs-font-mono);font-size:11px;line-height:1.7;color:var(--cs-text-faint);letter-spacing:.2px}
 .cs-basis span{text-transform:uppercase;letter-spacing:1.2px;color:var(--cs-label);margin-right:4px}
 .cs-basis a{color:var(--cs-text-soft)}
@@ -555,9 +552,10 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
   body{background:#fff}
 }
 </style>
-</head>
-<body>
 
+
+
+</head><body>
 <!-- ============================================================
      TOP NAV
      ============================================================ -->
@@ -569,15 +567,14 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
     </a>
     <div class="cs-packet">
       <span class="cs-label">Intelligence packet</span>
-      <strong>Avel eCare — Phase 1 diagnostic preview</strong>
+      <strong>Avel eCare — Phase 1 diagnostic preview · second edition</strong>
     </div>
     <div class="cs-stamps">
       <span>For <b>Avel eCare leadership</b></span>
-      <span>Refreshed <b>2 Oct 2026</b> · Confidential</span>
+      <span>Refreshed <b>20 Oct 2026</b> · Confidential</span>
     </div>
     <div class="cs-actions">
       <button class="cs-btn" id="btn-contents" aria-controls="contents" aria-expanded="false">Contents</button>
-      <button class="cs-btn cs-btn--print" id="btn-print">Print</button>
       <button class="cs-btn" id="btn-theme" aria-label="Toggle light or dark">Theme</button>
     </div>
   </div>
@@ -590,9 +587,10 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
       <button class="cs-tab" role="tab" data-tab="service" aria-controls="service"><i>04</i>Service levels</button>
       <button class="cs-tab" role="tab" data-tab="sales" aria-controls="sales"><i>05</i>Sales and growth</button>
       <button class="cs-tab" role="tab" data-tab="margins" aria-controls="margins"><i>06</i>Margins</button>
-      <button class="cs-tab" role="tab" data-tab="phase1" aria-controls="phase1"><i>07</i>Phase 1 engagement</button>
-      <button class="cs-tab" role="tab" data-tab="assumptions" aria-controls="assumptions"><i>08</i>Assumptions &amp; method</button>
-      <button class="cs-tab" role="tab" data-tab="faq" aria-controls="faq"><i>09</i>FAQ</button>
+      <button class="cs-tab" role="tab" data-tab="access" aria-controls="access"><i>07</i>Data access</button>
+      <button class="cs-tab" role="tab" data-tab="phase1" aria-controls="phase1"><i>08</i>Phase 1 engagement</button>
+      <button class="cs-tab" role="tab" data-tab="assumptions" aria-controls="assumptions"><i>09</i>Assumptions &amp; method</button>
+      <button class="cs-tab" role="tab" data-tab="faq" aria-controls="faq"><i>10</i>FAQ</button>
       <span class="cs-tab-indicator" aria-hidden="true"></span>
     </div>
 </nav>
@@ -624,15 +622,52 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 <section class="cs-panel" id="overview" role="tabpanel">
   <div class="cs-panel-head" data-anim>
     <span class="cs-label cs-fade">Section 01 · Overview</span>
-    <h1 class="cs-headline cs-fade" style="--i:1">Avel has doubled revenue since 2021. The next margin points sit in how clinician hours, response times and contracts are matched to demand</h1>
-    <p class="cs-lede cs-fade" style="--i:2">This is a diagnostic preview built only from public sources, with internal-style figures labelled as illustrative. It shows the questions a four-week Phase 1 would answer, the form the answers take, and what Avel would need to provide: read-only access to the data warehouse and five hours of leadership time.</p>
+    <h1 class="cs-headline cs-fade" style="--i:1">Avel has doubled revenue since 2021 and now has a new finance, revenue and operations team. One read-only warehouse connection gives that team a source-level fact base in four weeks, for three hours of its time</h1>
+    <p class="cs-lede cs-fade" style="--i:2">This second edition is built, like the first, only from public sources, with internal-style figures labelled as illustrative. It adds what the public record has shown since, and it rebuilds the ask: one read-only role on warehouse views Avel's own team defines, no patient identifiers, access that expires on its own, and no more than three hours of leadership time. Tab 07 sets out the access plan in full.</p>
   </div>
 <div class="cs-section">
   <h2 class="cs-headline" id="ov-question" data-subtab="The question">Where can Avel lift margin while strengthening service levels?</h2>
   <p class="cs-lede">Avel has doubled revenue since 2021 and added five businesses in two years. The operating questions it now faces are about allocation rather than demand: whether clinician hours sit where encounters arrive, whether response times hold at peak, whether announced channels become utilised contracts, and whether price keeps pace with clinical cost. This preview shows how a four-week diagnostic answers each from Avel's own records.</p>
 <div class="cs-grid cs-grid--4" data-anim><div class="cs-kpi cs-fade"><span class="cs-label">Revenue · FY2024</span><div class="cs-kpi-value">$92m</div><div class="cs-kpi-delta cs-pos">▲ 104% vs FY2021 ($45m)</div></div><div class="cs-kpi cs-fade" style="--i:1"><span class="cs-label">Gross margin · FY2024</span><div class="cs-kpi-value">39%</div><div class="cs-kpi-delta cs-pos">▲ 700 bps vs FY2021</div></div><div class="cs-kpi cs-fade" style="--i:2"><span class="cs-label">EBITDA margin · FY2024</span><div class="cs-kpi-value">15%</div><div class="cs-kpi-delta cs-muted">Company-described as mid-teens</div></div><div class="cs-kpi cs-fade" style="--i:3"><span class="cs-label">Acquisitions · 2023–25</span><div class="cs-kpi-value">5</div><div class="cs-kpi-delta cs-muted">Pharmacy, hospitalist, psychiatry</div></div></div>
-<div class="cs-grid cs-grid--4" data-anim><div class="cs-kpi cs-fade"><span class="cs-label">Illustrative register · recurring</span><div class="cs-kpi-value">$4.2m</div><div class="cs-kpi-delta cs-pos">≈ 460 bps of margin on A-01</div></div><div class="cs-kpi cs-fade" style="--i:1"><span class="cs-label">Illustrative first-100-day cash</span><div class="cs-kpi-value">$1.1m</div><div class="cs-kpi-delta cs-muted">Incl. $0.6m one-time billing recovery</div></div><div class="cs-kpi cs-fade" style="--i:2"><span class="cs-label">Illustrative revenue at risk</span><div class="cs-kpi-value">$3.1m</div><div class="cs-kpi-delta cs-neg">SLA-breached contracts renewing ≤12 months</div></div><div class="cs-kpi cs-fade" style="--i:3"><span class="cs-label">Leadership time asked</span><div class="cs-kpi-value">5 hrs</div><div class="cs-kpi-delta cs-muted">Kick-off, mid-point, readout</div></div></div>
-<div class="cs-grid cs-grid--2" data-anim><div><aside class="cs-callout cs-callout--note cs-fade"><span class="cs-callout-kicker">Public-source finding</span><p>Checked against Avel publications, SEC filings, public contracts and government records. Marked <b>Public-source</b> or <b>Calculated</b> in each exhibit's basis line.</p></aside><aside class="cs-callout cs-callout--assumption cs-fade" style="--i:2"><span class="cs-callout-kicker">Phase 1 finding</span><p>Traced to Avel source records and reconciled to the management accounts. None appears in this preview; the preview was built without any access to Avel.</p></aside></div><div><aside class="cs-callout cs-callout--caution cs-fade" style="--i:1"><span class="cs-callout-kicker">Illustrative output</span><p>Internal-style figures such as utilisation, response times, retention and contract margins are demonstration inputs built to show the format. They are labelled <b>Illustrative</b> and every one is replaced with Avel source data in Phase 1.</p></aside><aside class="cs-callout cs-callout--source cs-fade" style="--i:3"><span class="cs-callout-kicker">Source</span><p>103 public URLs across 58 domains, research dated 2 October 2026. Key sources are listed on the Assumptions &amp; method tab.</p></aside></div></div>
+<div class="cs-grid cs-grid--4" data-anim><div class="cs-kpi cs-fade"><span class="cs-label">Illustrative register · recurring</span><div class="cs-kpi-value">$4.2m</div><div class="cs-kpi-delta cs-pos">≈ 460 bps of margin on A-01</div></div><div class="cs-kpi cs-fade" style="--i:1"><span class="cs-label">Illustrative first-100-day cash</span><div class="cs-kpi-value">$1.1m</div><div class="cs-kpi-delta cs-muted">Incl. $0.6m one-time billing recovery</div></div><div class="cs-kpi cs-fade" style="--i:2"><span class="cs-label">Illustrative revenue at risk</span><div class="cs-kpi-value">$3.1m</div><div class="cs-kpi-delta cs-neg">SLA-breached contracts renewing ≤12 months</div></div><div class="cs-kpi cs-fade" style="--i:3"><span class="cs-label">Leadership time asked</span><div class="cs-kpi-value">≤3 hrs</div><div class="cs-kpi-delta cs-pos">135 minutes across three meetings</div></div></div>
+<div class="cs-grid cs-grid--2" data-anim><div><aside class="cs-callout cs-callout--note cs-fade"><span class="cs-callout-kicker">Public-source finding</span><p>Checked against Avel publications, SEC filings, public contracts and government records. Marked <b>Public-source</b> or <b>Calculated</b> in each exhibit's basis line.</p></aside><aside class="cs-callout cs-callout--assumption cs-fade" style="--i:2"><span class="cs-callout-kicker">Phase 1 finding</span><p>Traced to Avel source records and reconciled to the management accounts. None appears in this preview; the preview was built without any access to Avel.</p></aside></div><div><aside class="cs-callout cs-callout--caution cs-fade" style="--i:1"><span class="cs-callout-kicker">Illustrative output</span><p>Internal-style figures such as utilisation, response times, retention and contract margins are demonstration inputs built to show the format. They are labelled <b>Illustrative</b> and every one is replaced with Avel source data in Phase 1.</p></aside><aside class="cs-callout cs-callout--source cs-fade" style="--i:3"><span class="cs-callout-kicker">Source</span><p>103 public URLs across 58 domains for the first edition, plus 12 primary sources added on 20 October 2026. Key sources are listed on tab 09.</p></aside></div></div>
+</div>
+<div class="cs-section">
+  <h2 class="cs-headline" id="ov-new" data-subtab="New this edition">This edition adds three things the first left out: a new leadership bench, a peer transaction below 1x revenue, and $1.95bn of rural funding landing in Avel's core states</h2>
+  <p class="cs-lede">Avel's finance, revenue and operations leaders have all arrived or been confirmed since July 2025, so each would inherit register lines built before their time. A new team usually commissions its own baseline; Phase 1 gives each executive one, from the same records, without a question list. Exhibit numbers from the first edition are unchanged; new exhibits run from 1.20.</p>
+<figure class="cs-exhibit" data-anim id="ex-1-20">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 1.20 <em class="cs-badge cs-badge--new">New in this edition</em></span><h3 class="cs-exhibit-title">Nine public developments bear on Phase 1; most date from the last fifteen months</h3><p class="cs-exhibit-sub">Dated public events not covered in the first edition, with the read-across for the engagement.</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Date</th><th>Development</th><th>Read-across for Phase 1</th></tr></thead><tbody>
+<tr><td>23 Jul 2025</td><td>Martainn Lenhardt appointed CFO; previously VP Finance at Lyric and a business-unit leader at Change Healthcare</td><td>Natural sponsor for Phase 1; owns billing capture and cash (R-04, H5)</td></tr>
+<tr><td>3 Nov 2025</td><td>Manulife completes its acquisition of 75% of Comvest Credit Partners, administrative agent on Avel's senior secured facility since December 2021</td><td>Lender reporting can draw on the same reconciled evidence, if Avel chooses (Exhibit 7.17)</td></tr>
+<tr><td>2 Dec 2025</td><td>Pat Gundersen appointed CRO; remit includes client retention and using data to guide forecasting</td><td>Owns renewal pricing and cross-sell (R-03, R-05, R-06)</td></tr>
+<tr><td>Feb 2026</td><td>Consolidated Appropriations Act, 2026 extends Medicare telehealth flexibilities to 31 Dec 2027</td><td>Customers' reimbursement case holds through 2027</td></tr>
+<tr><td>13 Apr 2026</td><td>Rich Sanders confirmed as COO after several months as interim; previously led acute inpatient service lines</td><td>Owns rosters and evening cover (R-01, R-02, R-07)</td></tr>
+<tr><td>16 Aug 2026</td><td>DocGo agrees to acquire Hicuity Health (about $65m trailing revenue), mainly by assuming about $52m of debt</td><td>Valuation context for clinical virtual care (Exhibit 1.23)</td></tr>
+<tr><td>2 Sep 2026</td><td>FY2026 Rural Health Transformation awards reported at $1.95bn across nine states in Avel's core region; sub-awards under way in four</td><td>Funding reaches customers through state programmes (Exhibit 1.22)</td></tr>
+<tr><td>1 Oct 2026</td><td>A DocGo affiliate begins managing Hicuity's non-clinical operations ahead of closing</td><td>A tele-ICU competitor is in transition</td></tr>
+<tr><td>1 Nov 2026</td><td>Fifth anniversary of Aquiline ownership</td><td>A natural point for the board to review the value-creation plan on evidence</td></tr>
+</tbody></table></div>
+  <footer class="cs-basis"><span>Status</span> Public-source · <span>Source</span> Avel releases (Jul 2025, Dec 2025, Apr 2026); Manulife; DocGo 8-K and announcement; Becker's / NRHA tracker; CAA 2026; Aquiline · <span>Basis</span> announcement dates; read-across is CreditSwan analysis</footer>
+</figure>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-1-21">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 1.21 <em class="cs-badge cs-badge--new">New in this edition</em></span><h3 class="cs-exhibit-title">Three of the four operating executives who would own the register have been in seat for fifteen months or less</h3><p class="cs-exhibit-sub">Tenure of Avel executives named in public releases, to October 2026. The line marks this edition.</p></figcaption>
+  <div class="cs-exhibit-body" id="c1-21"></div>
+  <footer class="cs-basis"><span>Status</span> Public-source · <span>Source</span> Avel releases; Sioux Falls Business (Nov 2021) · <span>Basis</span> interim COO start date is not public and is shown approximately</footer>
+</figure>
+<figure class="cs-exhibit" data-anim id="ex-1-22">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 1.22 <em class="cs-badge cs-badge--new">New in this edition</em></span><h3 class="cs-exhibit-title">FY2026 Rural Health Transformation awards total $1.95bn across nine states in Avel's core region</h3><p class="cs-exhibit-sub">FY2026 state awards, $m. State allotments, not Avel revenue.</p></figcaption>
+  <div class="cs-exhibit-body" id="c1-22"></div>
+  <footer class="cs-basis"><span>Status</span> Public-source · <span>Source</span> Becker's Hospital Review, 2 Sep 2026 (NRHA tracker) · <span>Basis</span> state selection by CreditSwan; Avel does not publish revenue by state</footer>
+</figure>
+</div>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-1-23">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 1.23 <em class="cs-badge cs-badge--new">New in this edition</em></span><h3 class="cs-exhibit-title">Both recent tele-acute transactions priced at or near 1x trailing revenue before contingent consideration</h3><p class="cs-exhibit-sub">Consideration as a multiple of trailing revenue, x.</p></figcaption>
+  <div class="cs-exhibit-body" id="c1-23"></div>
+  <footer class="cs-basis"><span>Status</span> Calculated from public figures · <span>Source</span> Amwell 2025 Form 10-K; DocGo announcement, Aug 2026 · <span>Basis</span> Hicuity = ~$52m debt assumed ÷ ~$65m TTM revenue, excluding ~2% DocGo equity and a contingent 3.5%; APC = upfront basis, excluding 0.4x earn-out</footer>
+</figure>
+<div><div class="cs-grid" data-anim><div><aside class="cs-callout cs-callout--note cs-fade"><span class="cs-callout-kicker">Why this matters for the ask</span><p>Buyers and lenders in clinical virtual care are paying for demonstrated contribution, not scale. A reconciled register is the evidence either would ask for, and Avel controls who sees it.</p></aside></div><div><aside class="cs-callout cs-callout--assumption cs-fade" style="--i:1"><span class="cs-callout-kicker">What we have not assumed</span><p>We do not infer anything about Avel's plans, leverage or covenants from these events. They frame the questions; Phase 1 answers them from Avel's records.</p></aside></div></div>
+</div></div>
 </div>
 <div class="cs-section">
   <h2 class="cs-headline" id="ov-public" data-subtab="Public record">The public record shows a scaled, acquisitive clinical-services business with margin already rising</h2>
@@ -692,7 +727,7 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 <tr><td>Sales</td><td>Large channels, slow revenue</td><td>Signed scope stalls between credentialing and routine use (H3)</td><td>CRM stages × go-live × first invoice</td><td>05</td></tr>
 <tr><td>Margins</td><td>Gross margin up, EBITDA flat</td><td>Renewal concessions and unbilled usage offset scale gains (H4)</td><td>Contracts, uplift letters, invoices</td><td>06</td></tr>
 </tbody></table></div>
-  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan hypothesis map · <span>Basis</span> hypotheses H1–H6 detailed on tab 07</footer>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan hypothesis map · <span>Basis</span> hypotheses H1–H6 detailed on tab 08</footer>
 </figure>
 <figure class="cs-exhibit" data-anim id="ex-1-07">
   <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 1.07</span><h3 class="cs-exhibit-title">An illustrative register of $4.2m would take EBITDA margin from about 15% toward 20%</h3><p class="cs-exhibit-sub">Bridge from FY2024 EBITDA base to illustrative run-rate, $m. Net of the cost of the fix; overlaps counted once.</p></figcaption>
@@ -771,21 +806,21 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Competitor</th><th>Overlap with Avel</th><th>Recent development</th></tr></thead><tbody>
 <tr><td>Access TeleCare</td><td>Acute multi-specialty</td><td>Claims 1 in 5 US hospitals</td></tr>
 <tr><td>Equum Medical</td><td>Multi-specialty + platform</td><td>Acquired VeeOne services, May 2025</td></tr>
-<tr><td>Hicuity / DocGo</td><td>Tele-ICU, virtual nursing</td><td>Acquisition agreed Aug 2026</td></tr>
+<tr><td>Hicuity / DocGo</td><td>Tele-ICU, virtual nursing</td><td>Acquisition agreed Aug 2026; DocGo affiliate managing non-clinical operations from 1 Oct 2026</td></tr>
 <tr><td>Eagle Telemedicine</td><td>Hospitalist, inpatient specialties</td><td>—</td></tr>
 <tr><td>TeleSpecialists</td><td>Neurology, psychiatry</td><td>400+ hospitals claimed</td></tr>
 <tr><td>Iris Telehealth</td><td>Telepsychiatry</td><td>Acquired innovaTel, Jan 2025</td></tr>
 <tr><td>PipelineRx · CPS</td><td>Remote pharmacy</td><td>—</td></tr>
 <tr><td>Sanford, Mercy</td><td>Internal virtual programmes</td><td>Sanford centre opened Nov 2024</td></tr>
 </tbody></table></div>
-  <footer class="cs-basis"><span>Status</span> Public-source · <span>Source</span> Competitor publications; DocGo Q2 2026 10-Q · <span>Basis</span> competitor scale claims are self-reported</footer>
+  <footer class="cs-basis"><span>Status</span> Public-source · <span>Source</span> Competitor publications; DocGo Q2 2026 10-Q and 8-K, 1 Oct 2026 · <span>Basis</span> competitor scale claims are self-reported</footer>
 </figure>
 <figure class="cs-exhibit" data-anim id="ex-1-17">
   <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 1.17</span><h3 class="cs-exhibit-title">Demand indicators are strong; each also signals pressure on what customers can pay</h3><p class="cs-exhibit-sub">Public demand and affordability indicators.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Indicator</th><th class="num">Value</th><th>Read-across to Avel</th></tr></thead><tbody>
 <tr><td>Rural hospitals with negative margins</td><td class="num">41.2%</td><td>Need and collection risk</td></tr>
 <tr><td>Projected physician shortfall, 2038</td><td class="num">141,160 FTE</td><td>Structural demand; a projection</td></tr>
-<tr><td>Rural Health Transformation, FY26–30</td><td class="num">$50bn</td><td>Broad fund, not telemedicine-only</td></tr>
+<tr><td>Rural Health Transformation, FY26–30</td><td class="num">$50bn</td><td>Broad fund, not telemedicine-only; FY26 awards in Avel's core states in Exhibit 1.22</td></tr>
 <tr><td>Nursing homes (2022)</td><td class="num">14,700</td><td>Senior-care setting</td></tr>
 <tr><td>Public schools (2023–24)</td><td class="num">99,297</td><td>School-health setting</td></tr>
 </tbody></table></div>
@@ -794,8 +829,8 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 <div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-1-18">
   <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 1.18</span><h3 class="cs-exhibit-title">Every figure in this preview carries one of three evidence classes</h3><p class="cs-exhibit-sub">Count of exhibits by evidence class across tabs 01 and 03–06.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Class</th><th>Meaning</th><th class="num">Exhibits</th></tr></thead><tbody>
-<tr><td>Public-source</td><td>Checked against a primary public record</td><td class="num">18</td></tr>
-<tr><td>Calculated</td><td>Arithmetic on public figures, shown in full</td><td class="num">5</td></tr>
+<tr><td>Public-source</td><td>Checked against a primary public record</td><td class="num">21</td></tr>
+<tr><td>Calculated</td><td>Arithmetic on public figures, shown in full</td><td class="num">6</td></tr>
 <tr><td>Illustrative</td><td>Demonstration input, replaced in Phase 1</td><td class="num">70</td></tr>
 <tr><td>Phase 1 finding</td><td>Traced to Avel records, reconciled to accounts</td><td class="num">0</td></tr>
 </tbody></table></div>
@@ -804,12 +839,12 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 <figure class="cs-exhibit" data-anim id="ex-1-19">
   <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 1.19</span><h3 class="cs-exhibit-title">Four dated policy events sit inside the next fifteen months</h3><p class="cs-exhibit-sub">Regulatory and contract dates relevant to service mix and pricing.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Date</th><th>Event</th><th>Exposure</th></tr></thead><tbody>
-<tr><td>31 Dec 2026</td><td>DEA telemedicine prescribing flexibilities expire unless extended</td><td>Psychiatry workflows</td></tr>
-<tr><td>31 Dec 2027</td><td>Medicare telehealth location flexibilities end</td><td>Customer reimbursement case</td></tr>
+<tr><td>31 Dec 2026</td><td>DEA telemedicine prescribing flexibilities expire unless extended again</td><td>Psychiatry workflows; 72 days from this edition</td></tr>
+<tr><td>31 Dec 2027</td><td>Medicare telehealth flexibilities end, as extended by CAA 2026</td><td>Customer reimbursement case</td></tr>
 <tr><td>In force</td><td>CY2026 PFS removes frequency limits for some inpatient telehealth</td><td>Hospitalist, critical care</td></tr>
 <tr><td>Undated</td><td>HHS list shows partial termination of an Avel IHS contract</td><td>Government revenue; scope unknown</td></tr>
 </tbody></table></div>
-  <footer class="cs-basis"><span>Status</span> Public-source · <span>Source</span> DEA; CMS FAQ 26 Feb 2026; CMS CY2026 PFS; HHS contract list</footer>
+  <footer class="cs-basis"><span>Status</span> Public-source · <span>Source</span> DEA fourth extension (Federal Register, 31 Dec 2025); CAA 2026; CMS FAQ 26 Feb 2026; CMS CY2026 PFS; HHS contract list</footer>
 </figure></div>
 <div class="cs-grid cs-grid--2" data-anim><div><aside class="cs-callout cs-callout--caution cs-fade"><span class="cs-callout-kicker">Caution</span><p>The HHS list records a partial termination or scope reduction on an Avel contract. It does not quantify the revenue effect or imply poor performance; Phase 1 reconciles it against invoices.</p></aside></div><div><aside class="cs-callout cs-callout--note cs-fade" style="--i:1"><span class="cs-callout-kicker">Note</span><p>Hicuity's 6.9% adjusted EBITDA margin is one peer at one point in time (A-12). It frames the range of outcomes in clinical virtual care; it is not a target for Avel.</p></aside></div></div>
 </div>
@@ -922,7 +957,7 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
     <div class="ab-kpi"><div class="k">LLM-generated figures</div><div class="n">0</div><div class="d">Models map; analysts approve</div></div>
   </div>
 
-  <div class="ab-trust"><span class="lead">Data handling</span><span>NDA + HIPAA BAA</span><span>Read-only access</span><span>Minimum necessary PHI</span><span>Siloed per client · AWS</span><span>SOC 2</span><span>AES-256 at rest</span><span>Zero model egress</span><span>Never trained on client data</span></div>
+  <div class="ab-trust"><span class="lead">Data handling</span><span>NDA + HIPAA BAA</span><span>Read-only role on your views</span><span>No patient identifiers</span><span>Access expires by default</span><span>Siloed per client · AWS</span><span>SOC 2</span><span>AES-256 at rest</span><span>Zero model egress</span><span>Never trained on client data</span></div>
 
   <div class="ab-close">
     <p class="big">Every number carries a source. A flagged gap beats a guess.</p>
@@ -1745,18 +1780,215 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 </div>
 </section>
 
-<section class="cs-panel" id="phase1" role="tabpanel">
+<section class="cs-panel" id="access" role="tabpanel">
   <div class="cs-panel-head" data-anim>
-    <span class="cs-label cs-fade">Section 07 · Phase 1 engagement</span>
-    <h1 class="cs-headline cs-fade" style="--i:1">Phase 1 replaces every illustrative figure in this preview with Avel's own, in four weeks, on read-only data access</h1>
-    <p class="cs-lede cs-fade" style="--i:2">The previous four tabs show the shape of the answers. This tab sets out how Phase 1 produces them: the hypotheses, the data, the register, the monitor Avel keeps, and the terms.</p>
+    <span class="cs-label cs-fade">Section 07 · Data access · New in this edition</span>
+    <h1 class="cs-headline cs-fade" style="--i:1">Phase 1 needs one read-only role on views Avel's own team defines, no patient identifiers and three hours of leadership time</h1>
+    <p class="cs-lede cs-fade" style="--i:2">Access to the data warehouse is the whole engagement, so this tab sets out exactly what it involves: who at Avel does what, in what order access opens, where the analysis runs, which fields are read, how Avel stays in control, and what happens if a system cannot be reached.</p>
   </div>
 <div class="cs-section">
-  <h2 class="cs-headline" id="p1-offer" data-subtab="The offer">Four weeks from usable data, a fixed fee, and no more than five hours of leadership time</h2>
-  <p class="cs-lede">This preview was built without any access to Avel. Phase 1 plugs into Avel's own data, screens every contract and every clinician pool, goes deep on two or three, and leaves a weekly monitor running after we finish. Avel's contribution is read-only access to the data warehouse and its source systems; we do the extraction and reconciliation ourselves.</p>
-<div class="cs-grid cs-grid--4" data-anim><div class="cs-kpi cs-fade"><span class="cs-label">Fixed fee</span><div class="cs-kpi-value">US$45,000</div><div class="cs-kpi-delta cs-muted">Expenses included · written acceptance criteria</div></div><div class="cs-kpi cs-fade" style="--i:1"><span class="cs-label">Duration</span><div class="cs-kpi-value">4 weeks</div><div class="cs-kpi-delta cs-muted">Clock starts when agreed data is usable</div></div><div class="cs-kpi cs-fade" style="--i:2"><span class="cs-label">Leadership time</span><div class="cs-kpi-value">≤5 hrs</div><div class="cs-kpi-delta cs-pos">Kick-off, mid-point, readout</div></div><div class="cs-kpi cs-fade" style="--i:3"><span class="cs-label">Coverage</span><div class="cs-kpi-value">100%</div><div class="cs-kpi-delta cs-pos">Every contract and pool screened</div></div></div>
-<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-01">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.01</span><h3 class="cs-exhibit-title">Phase 1 delivers four things, each with written acceptance criteria</h3><p class="cs-exhibit-sub">Deliverables and what Avel keeps.</p></figcaption>
+  <h2 class="cs-headline" id="da-ask" data-subtab="The ask">The whole ask is one read-only role, one contracts export and three meetings; Avel's team never receives a question list</h2>
+  <p class="cs-lede">The first edition asked for read-only access to the warehouse and eight source systems, and about 29 hours of Avel time. This edition narrows the ask to what the analysis cannot do without: a single read-only role on views Avel's own team writes, one export of signed contracts, and three short meetings. Everything else, from extraction to reconciliation against the management accounts, sits with CreditSwan.</p>
+<div class="cs-grid cs-grid--4" data-anim><div class="cs-kpi cs-fade"><span class="cs-label">Leadership time</span><div class="cs-kpi-value">≤3 hrs</div><div class="cs-kpi-delta cs-pos">135 minutes planned · capped in the terms</div></div><div class="cs-kpi cs-fade" style="--i:1"><span class="cs-label">Avel's time, all roles</span><div class="cs-kpi-value">~15 hrs</div><div class="cs-kpi-delta cs-pos">▼ from 29 hrs in the first edition</div></div><div class="cs-kpi cs-fade" style="--i:2"><span class="cs-label">Patient identifiers read</span><div class="cs-kpi-value">0</div><div class="cs-kpi-delta cs-pos">No clinical content either</div></div><div class="cs-kpi cs-fade" style="--i:3"><span class="cs-label">Access window</span><div class="cs-kpi-value">45 days</div><div class="cs-kpi-delta cs-muted">Expires on its own; revocable same day</div></div></div>
+<div class="cs-assumptions" data-anim>
+  <span class="cs-label">Assumptions on this tab</span>
+  <h3 class="cs-headline">What these figures rest on</h3>
+  <p>Hours and dates on this tab are CreditSwan's plan, not measurements. They rest on four stated assumptions about Avel's warehouse, set out below and confirmed in the Tier 0 catalogue review.</p>
+  <div class="cs-table-wrap"><table class="cs-table"><thead><tr><th>Ref</th><th>Assumption</th><th class="num">Value used</th><th>Basis</th><th class="num">Sensitivity</th></tr></thead><tbody><tr><td><span class="cs-aid">A-14</span></td><td>Avel data-contact time over Phase 1</td><td class="num">~8 hours</td><td>CreditSwan estimate: catalogue review, role grant, weekly 30-minute mapping slot and ad hoc access support</td><td class="num">±3 h if acquired platforms sit outside the warehouse</td></tr><tr><td><span class="cs-aid">A-15</span></td><td>Size of the minimum data set</td><td class="num">46 fields</td><td>CreditSwan draft, mapped to Avel tables in the Tier 0 catalogue review</td><td class="num">Field count moves; patient identifiers stay at zero</td></tr><tr><td><span class="cs-aid">A-16</span></td><td>Warehouse platform and BI layer</td><td class="num">Not public; Power BI confirmed</td><td>eSync reports through Power BI (public); the warehouse platform is confirmed in Tier 0</td><td class="num">Changes which access option is fastest, not the scope</td></tr><tr><td><span class="cs-aid">A-17</span></td><td>Read-only role created within a week of signature</td><td class="num">7 days</td><td>Typical for a scoped read-only role on existing views</td><td class="num">Each week of delay moves every date in Exhibit 7.16</td></tr></tbody></table></div>
+</div>
+<figure class="cs-exhibit" data-anim id="ex-7-01">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.01</span><h3 class="cs-exhibit-title">Avel's team does six small things; CreditSwan does the extraction, mapping and reconciliation</h3><p class="cs-exhibit-sub">Every task on the Avel side of Phase 1, who does it and the planned time.</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th class="num">Step</th><th>Task</th><th>Who at Avel</th><th class="num">Planned time</th><th>What it involves</th></tr></thead><tbody>
+<tr><td class="num">1</td><td>Name a data contact</td><td>CFO</td><td class="num">—</td><td>One email</td></tr>
+<tr><td class="num">2</td><td>Walk CreditSwan through the warehouse catalogue (Tier 0)</td><td>Data contact</td><td class="num">45 min</td><td>Schema and table names on a screen share; no records</td></tr>
+<tr><td class="num">3</td><td>Create one read-only role on agreed views</td><td>Data contact</td><td class="num">~2 h</td><td>A standard grant; Avel's team writes and owns the views</td></tr>
+<tr><td class="num">4</td><td>Export signed contracts and uplift letters once (Tier 2)</td><td>Finance analyst</td><td class="num">~3 h</td><td>One folder export from the contract repository</td></tr>
+<tr><td class="num">5</td><td>Answer mapping questions in one weekly slot</td><td>Data contact</td><td class="num">30 min a week</td><td>Batched by CreditSwan; never ad hoc</td></tr>
+<tr><td class="num">6</td><td>Attend kick-off, mid-point and readout; approve guardrails</td><td>Leadership · clinical lead</td><td class="num">≤3 h · ~1 h</td><td>30, 45 and 60 minutes; guardrails reviewed asynchronously</td></tr>
+</tbody></table></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan engagement plan · <span>Basis</span> data-contact total includes ~3 h of ad hoc access support · <span>Assumption</span> A-14</footer>
+</figure>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-02">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.02</span><h3 class="cs-exhibit-title">Every role's planned hours sit inside a cap written into the engagement letter</h3><p class="cs-exhibit-sub">Planned hours over Phase 1 (bar) against the proposed cap (tick), by role.</p></figcaption>
+  <div class="cs-exhibit-body" id="c7-02"></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan engagement plan · <span>Basis</span> caps proposed for the engagement letter · <span>Assumption</span> A-14</footer>
+</figure>
+<figure class="cs-exhibit" data-anim id="ex-7-03">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.03</span><h3 class="cs-exhibit-title">Avel's total ask falls from 29 hours to about 15, and from eight access grants to one</h3><p class="cs-exhibit-sub">First edition (2 Oct 2026) against this edition, by measure of the ask.</p></figcaption>
+  <div class="cs-exhibit-body" id="c7-03"></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> First edition, Exhibit 7.05–7.06; this edition, Exhibits 7.01 and 8.05 · <span>Basis</span> access grants = separate systems Avel must open to CreditSwan · <span>Assumption</span> A-14</footer>
+</figure>
+</div>
+</div>
+<div class="cs-section">
+  <h2 class="cs-headline" id="da-tiers" data-subtab="Staged access">Access is staged: names first, operational views second, contracts last, and Avel decides when each tier opens</h2>
+  <p class="cs-lede">Compliance and IT teams are asked to approve something they can see. Tier 0 shows them the method on Avel's own catalogue before a single record is read, and produces the one-page data map that both sides sign. Tier 1 starts the clock; Tier 2 can follow within days and is not needed for the first findings.</p>
+<figure class="cs-exhibit" data-anim id="ex-7-04">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.04</span><h3 class="cs-exhibit-title">Access arrives in three tiers, each opt-in, so Avel can see the method before any record moves</h3><p class="cs-exhibit-sub">What CreditSwan sees at each tier, when, and what it unlocks.</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Tier</th><th>What CreditSwan sees</th><th>When</th><th>Avel effort</th><th>Unlocks</th></tr></thead><tbody>
+<tr><td>0 · Catalogue</td><td>Schema, table and column names and row counts; no records</td><td>Before the clock starts</td><td>45 min screen share</td><td>The one-page data map (Exhibit 8.05)</td></tr>
+<tr><td>1 · Operational views</td><td>Scheduling, session timestamps, payroll by pool, billing and AR, CRM, credentialing, through views Avel defines</td><td>Day 0</td><td>One role grant</td><td>H1, H2, H3, H5 and most of H4</td></tr>
+<tr><td>2 · Contracts</td><td>Signed agreements, amendments, uplift letters</td><td>By day 5</td><td>One export</td><td>Escalators, SLA standards and pricing (H4, A-07)</td></tr>
+</tbody></table></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan access design · <span>Basis</span> Tier 1 can start without Tier 2 · <span>Assumption</span> A-15</footer>
+</figure>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-05">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.05</span><h3 class="cs-exhibit-title">The catalogue review and the role grant happen before the four-week clock starts</h3><p class="cs-exhibit-sub">Access plan, days from usable data. The line marks day 0.</p></figcaption>
+  <div class="cs-exhibit-body" id="c7-05"></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan workplan · <span>Basis</span> day 0 = Tier 1 views usable · <span>Assumption</span> A-17</footer>
+</figure>
+<figure class="cs-exhibit" data-anim id="ex-7-06">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.06</span><h3 class="cs-exhibit-title">Tier 1 views carry most of every hypothesis test; signed contracts matter most for pricing and cash</h3><p class="cs-exhibit-sub">Share of each hypothesis test supported by each tier, %.</p></figcaption>
+  <div class="cs-exhibit-body" id="c7-06"></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan method; hypothesis map in Exhibit 8.03 · <span>Basis</span> CreditSwan estimate of evidence weight per test</footer>
+</figure>
+</div>
+</div>
+<div class="cs-section">
+  <h2 class="cs-headline" id="da-where" data-subtab="Where it runs">Avel decides where the work runs, and none of the options touches a live clinical system</h2>
+  <p class="cs-lede">Every option reads from the warehouse or the reporting layer above it, never from eSync or an EHR in production. If Avel's warehouse supports a scoped read-only role, the analysis can run inside it and only aggregated results leave; if not, a secure extract or a Power BI read keeps the timetable.</p>
+<figure class="cs-exhibit" data-anim id="ex-7-07">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.07</span><h3 class="cs-exhibit-title">Avel chooses where the analysis runs; running in place keeps every record inside Avel's environment</h3><p class="cs-exhibit-sub">Three access options, how each works and what it asks of IT.</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Option</th><th>How it works</th><th>What leaves Avel</th><th>IT effort</th><th>Best when</th></tr></thead><tbody>
+<tr><td>A · In place</td><td>CreditSwan analysts query a read-only role inside Avel's warehouse; the analysis runs where the data sits</td><td>Aggregated results only</td><td>Role and network allow-list</td><td>Compliance prefers that no extract leaves</td></tr>
+<tr><td>B · Secure extract</td><td>Agreed views copied by secure share or SFTP to a CreditSwan workspace siloed per client on AWS</td><td>Agreed fields from agreed views</td><td>Role and one transfer</td><td>Fastest route to a full-depth screen</td></tr>
+<tr><td>C · Power BI read</td><td>Build permission on the datasets eSync already feeds</td><td>Model-level aggregates</td><td>One workspace permission</td><td>Warehouse access is not yet possible</td></tr>
+</tbody></table></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan access design · <span>Basis</span> option chosen in the Tier 0 review · <span>Assumption</span> A-16</footer>
+</figure>
+<figure class="cs-exhibit" data-anim id="ex-7-08">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.08</span><h3 class="cs-exhibit-title">Running in place matches an extract on depth; a Power BI read is quickest but shallowest</h3><p class="cs-exhibit-sub">Each option scored on whether records stay in Avel, ease for IT, speed to the first screen and depth of analysis. High is better in every column.</p></figcaption>
+  <div class="cs-exhibit-body" id="c7-08"></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan assessment · <span>Basis</span> IT effort shown inverted, so High = least effort · <span>Assumption</span> A-16</footer>
+</figure>
+</div>
+<div class="cs-section">
+  <h2 class="cs-headline" id="da-phi" data-subtab="Patient data">No patient identifiers are needed; a BAA is signed anyway so compliance does not have to rule on edge cases</h2>
+  <p class="cs-lede">Every Phase 1 test runs on timing, coverage, pay and commercial records. Encounter timestamps can still count as protected health information when they relate to a patient, so CreditSwan takes them without a patient key and signs a business associate agreement before any access, rather than asking Avel's compliance team to decide where the line sits.</p>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-09">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.09</span><h3 class="cs-exhibit-title">Phase 1 reads no patient identifiers and no clinical content</h3><p class="cs-exhibit-sub">Field groups in the minimum data set, whether each is read and why.</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Field group</th><th>Examples</th><th>Read?</th><th>Why</th></tr></thead><tbody>
+<tr><td>Patient identifiers</td><td>Name, MRN, date of birth, address</td><td>Not read</td><td>No test needs them</td></tr>
+<tr><td>Clinical content</td><td>Notes, diagnoses, orders</td><td>Not read</td><td>Clinical quality is out of scope</td></tr>
+<tr><td>Encounter timing</td><td>Request, connect, close timestamps; site; service line</td><td>Read, no patient key</td><td>Demand by hour and response tails (H1, H2)</td></tr>
+<tr><td>Disposition</td><td>Coded outcome, such as transfer or remain</td><td>Read, code only</td><td>Guardrail check (Exhibit 4.12)</td></tr>
+<tr><td>Clinician</td><td>Pseudonymous ID, pool, licences by state</td><td>Read, pseudonymised</td><td>Rosters and coverage (H1)</td></tr>
+<tr><td>Pay</td><td>Hours, overtime codes, loaded rate by pool</td><td>Read</td><td>Premium labour (R-02)</td></tr>
+<tr><td>Commercial</td><td>Invoices, credit notes, CRM stages, contracts</td><td>Read</td><td>Pricing, funnel and cash (H3 to H5)</td></tr>
+</tbody></table></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan minimum data set · <span>Basis</span> encounter timestamps are taken without a patient key; a BAA is signed regardless · <span>Assumption</span> A-15</footer>
+</figure>
+<figure class="cs-exhibit" data-anim id="ex-7-10">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.10</span><h3 class="cs-exhibit-title">None of the 46 fields in the minimum data set identifies a patient or carries clinical content</h3><p class="cs-exhibit-sub">Fields in the draft minimum data set, by sensitivity class.</p></figcaption>
+  <div class="cs-exhibit-body" id="c7-10"></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan minimum data set · <span>Basis</span> draft count, finalised in Tier 0 · <span>Assumption</span> A-15</footer>
+</figure>
+</div>
+</div>
+<div class="cs-section">
+  <h2 class="cs-headline" id="da-controls" data-subtab="Controls">Avel keeps control of the access throughout: it is logged weekly, revocable the same day and expires on its own</h2>
+  <p class="cs-lede">The controls below are written into the engagement letter, not offered as goodwill. The default is that access ends at day 45 without anyone at Avel having to remember to remove it.</p>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-11">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.11</span><h3 class="cs-exhibit-title">Avel can see, narrow and end CreditSwan's access at any point</h3><p class="cs-exhibit-sub">Controls on the access, and what Avel sees or does under each.</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Control</th><th>What Avel sees or does</th></tr></thead><tbody>
+<tr><td>Named users</td><td>Three named CreditSwan analysts; no shared logins</td></tr>
+<tr><td>Authentication</td><td>Avel's SSO and MFA where available</td></tr>
+<tr><td>Scope</td><td>Views Avel writes; Avel can narrow a view at any time</td></tr>
+<tr><td>Visibility</td><td>Query log shared with Avel IT every week</td></tr>
+<tr><td>Revocation</td><td>Same day, on request, with no notice period</td></tr>
+<tr><td>Expiry</td><td>The role expires at day 45 without any action from Avel</td></tr>
+<tr><td>Models</td><td>Zero model egress; never used to train models; no model generates a figure</td></tr>
+<tr><td>Close</td><td>Deletion certified at close unless Phase 2 proceeds</td></tr>
+</tbody></table></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan data-handling terms</footer>
+</figure>
+<figure class="cs-exhibit" data-anim id="ex-7-12">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.12</span><h3 class="cs-exhibit-title">Access is time-boxed: open for 45 days, logged every week and deleted by day 50</h3><p class="cs-exhibit-sub">Control timeline, days from usable data.</p></figcaption>
+  <div class="cs-exhibit-body" id="c7-12"></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan data-handling terms · <span>Basis</span> expiry and deletion dates written into the engagement letter</footer>
+</figure>
+</div>
+<figure class="cs-exhibit" data-anim id="ex-7-13">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.13</span><h3 class="cs-exhibit-title">The questions IT and compliance usually ask, answered before they are asked</h3><p class="cs-exhibit-sub">Short answers; detail in the engagement letter.</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Question</th><th>Short answer</th></tr></thead><tbody>
+<tr><td>Do you need write access?</td><td>No. Read-only, on views Avel defines</td></tr>
+<tr><td>Do you need software installed or a VPN?</td><td>No software install; an allow-list or SSO is enough</td></tr>
+<tr><td>Will you query production systems?</td><td>No. The warehouse or reporting layer only</td></tr>
+<tr><td>Is a BAA needed if no identifiers are read?</td><td>We sign one anyway, before any access</td></tr>
+<tr><td>How much history?</td><td>24 to 36 months, by table (Exhibit 8.05)</td></tr>
+<tr><td>Who at CreditSwan sees the data?</td><td>Three named analysts</td></tr>
+<tr><td>What if a table is messy?</td><td>We map and reconcile it; Avel is not asked to clean anything</td></tr>
+<tr><td>Can we see what you ran?</td><td>Yes. The query log, every week</td></tr>
+</tbody></table></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan data-handling terms</footer>
+</figure>
+</div>
+<div class="cs-section">
+  <h2 class="cs-headline" id="da-people" data-subtab="Leadership time">Leadership gives three meetings in four weeks, and sees the whole business before the second one</h2>
+  <p class="cs-lede">The four operating executives are named below with the register lines each would own. None is asked to prepare anything. The mid-point meeting exists so that leadership can test the screen before the deep-dives are chosen.</p>
+<figure class="cs-exhibit" data-anim id="ex-7-14">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.14</span><h3 class="cs-exhibit-title">Each executive gets the register lines they own and one meeting, not a question list</h3><p class="cs-exhibit-sub">Executives named in public releases, their register lines and what Phase 1 asks of them.</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Executive</th><th>In role since</th><th>Register lines they own</th><th>What Phase 1 asks</th></tr></thead><tbody>
+<tr><td>Doug Duskin, CEO</td><td>Nov 2021</td><td>The whole register; the Phase 2 decision</td><td>Readout, 60 min</td></tr>
+<tr><td>Martainn Lenhardt, CFO</td><td>Jul 2025</td><td>R-04 billing capture; one-time cash (H5)</td><td>Sponsor; three meetings</td></tr>
+<tr><td>Pat Gundersen, CRO</td><td>Dec 2025</td><td>R-03, R-05, R-06 pricing, tail contracts, cross-sell</td><td>Readout; mid-point optional</td></tr>
+<tr><td>Rich Sanders, COO</td><td>Apr 2026</td><td>R-01, R-02, R-07 rosters, premium labour, evening cover</td><td>Mid-point and readout</td></tr>
+<tr><td>Dr Kelly Rhone, CMO</td><td>Not public</td><td>Service guardrails (Exhibit 4.13)</td><td>Asynchronous approval, ~1 h</td></tr>
+</tbody></table></div>
+  <footer class="cs-basis"><span>Status</span> Public-source · <span>Source</span> Avel releases (Jul 2025, Dec 2025, Apr 2026); SDAHO, May 2026; Sioux Falls Business, Nov 2021 · <span>Basis</span> register ownership is CreditSwan's proposal</footer>
+</figure>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-15">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.15</span><h3 class="cs-exhibit-title">Three meetings use 135 of the 180 leadership minutes the terms allow</h3><p class="cs-exhibit-sub">Leadership minutes by meeting, against the 180-minute cap.</p></figcaption>
+  <div class="cs-exhibit-body" id="c7-15"></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan engagement plan · <span>Basis</span> cap written into the engagement letter</footer>
+</figure>
+<figure class="cs-exhibit" data-anim id="ex-7-16">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.16</span><h3 class="cs-exhibit-title">Leadership sees a reconciled whole-business screen about twenty days after signature</h3><p class="cs-exhibit-sub">Days from signature to each milestone.</p></figcaption>
+  <div class="cs-exhibit-body" id="c7-16"></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan workplan · <span>Basis</span> assumes the read-only role is live within a week of signature · <span>Assumption</span> A-17</footer>
+</figure>
+</div>
+</div>
+<div class="cs-section">
+  <h2 class="cs-headline" id="da-one" data-subtab="One fact base">One extract serves management, board and lenders, so Avel answers each question once</h2>
+  <p class="cs-lede">Avel reports to a sponsor that has owned it since November 2021 and to lenders on a senior secured facility. The same reconciled records that answer management's questions can answer theirs, which removes the next round of data requests. Avel owns the outputs and decides who sees them.</p>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-17">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.17</span><h3 class="cs-exhibit-title">One reconciled fact base answers the questions Avel's board and lenders ask, if Avel chooses to share it</h3><p class="cs-exhibit-sub">Audiences for Phase 1 outputs and what each would use. Avel decides who sees what.</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Audience</th><th>Question they ask</th><th>What Phase 1 gives them</th><th>Who decides</th></tr></thead><tbody>
+<tr><td>Avel leadership</td><td>Where is margin made and lost?</td><td>Register, deep-dives, weekly monitor</td><td>Avel</td></tr>
+<tr><td>Board and sponsor (Aquiline, owner since Nov 2021)</td><td>Is the value-creation plan on track?</td><td>Register lines sized, owned and evidenced</td><td>Avel</td></tr>
+<tr><td>Lenders (senior secured facility; Comvest, now Manulife | Comvest, as agent)</td><td>Are earnings and cash holding?</td><td>The same KPIs, reconciled to the management accounts</td><td>Avel</td></tr>
+<tr><td>Any future diligence</td><td>Can the numbers be traced?</td><td>A source trail on every figure</td><td>Avel</td></tr>
+</tbody></table></div>
+  <footer class="cs-basis"><span>Status</span> Public-source · <span>Source</span> Aquiline (2021); Comvest release, 8 Dec 2021; Manulife, 3 Nov 2025 · <span>Basis</span> outputs are Avel's property under the terms (Exhibit 8.18)</footer>
+</figure>
+<figure class="cs-exhibit" data-anim id="ex-7-18">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.18</span><h3 class="cs-exhibit-title">If a system cannot be reached, scope narrows by agreement and the register says what was not tested</h3><p class="cs-exhibit-sub">Fallbacks agreed in advance, by system.</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>System</th><th>If it cannot be reached</th><th>Fallback</th><th>What narrows</th></tr></thead><tbody>
+<tr><td>Warehouse role</td><td>IT cannot grant it in time</td><td>Option C Power BI read, or option B extract</td><td>Session-level depth on response tails</td></tr>
+<tr><td>eSync session logs</td><td>Acquired platforms sit outside the warehouse</td><td>One export per legacy platform</td><td>Platform comparison (Exhibit 4.06) may be partial</td></tr>
+<tr><td>Payroll / HRIS</td><td>Not held in the warehouse</td><td>Monthly pool-level summary from finance</td><td>Hour-by-hour premium labour</td></tr>
+<tr><td>CRM</td><td>Sparse fields before 2025</td><td>First-invoice dates from billing</td><td>Stage timing in the funnel (Exhibit 5.02)</td></tr>
+<tr><td>Contracts</td><td>Repository incomplete</td><td>Top 50 contracts by value first</td><td>Long-tail pricing (Exhibit 6.06)</td></tr>
+</tbody></table></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan access design · <span>Basis</span> the clock starts when agreed data is usable</footer>
+</figure>
+</div>
+</div>
+</section>
+
+<section class="cs-panel" id="phase1" role="tabpanel">
+  <div class="cs-panel-head" data-anim>
+    <span class="cs-label cs-fade">Section 08 · Phase 1 engagement</span>
+    <h1 class="cs-headline cs-fade" style="--i:1">Phase 1 replaces every illustrative figure in this preview with Avel's own, in four weeks, from one read-only warehouse role</h1>
+    <p class="cs-lede cs-fade" style="--i:2">Tabs 03 to 06 show the shape of the answers and tab 07 sets out the access. This tab sets out how Phase 1 produces the answers: the hypotheses, the data, the register, the monitor Avel keeps, and the terms.</p>
+  </div>
+<div class="cs-section">
+  <h2 class="cs-headline" id="p1-offer" data-subtab="The offer">Four weeks from usable data, a fixed fee, and no more than three hours of leadership time</h2>
+  <p class="cs-lede">This preview was built without any access to Avel. Phase 1 plugs into Avel's own data, screens every contract and every clinician pool, goes deep on two or three, and leaves a weekly monitor running after we finish. Avel's contribution is one read-only role on warehouse views its own team defines (tab 07); we do the extraction, mapping and reconciliation ourselves.</p>
+<div class="cs-grid cs-grid--4" data-anim><div class="cs-kpi cs-fade"><span class="cs-label">Fixed fee</span><div class="cs-kpi-value">US$45,000</div><div class="cs-kpi-delta cs-muted">Expenses included · written acceptance criteria</div></div><div class="cs-kpi cs-fade" style="--i:1"><span class="cs-label">Duration</span><div class="cs-kpi-value">4 weeks</div><div class="cs-kpi-delta cs-muted">Clock starts when agreed data is usable</div></div><div class="cs-kpi cs-fade" style="--i:2"><span class="cs-label">Leadership time</span><div class="cs-kpi-value">≤3 hrs</div><div class="cs-kpi-delta cs-pos">30, 45 and 60 minute meetings</div></div><div class="cs-kpi cs-fade" style="--i:3"><span class="cs-label">Coverage</span><div class="cs-kpi-value">100%</div><div class="cs-kpi-delta cs-pos">Every contract and pool screened</div></div></div>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-8-01">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.01</span><h3 class="cs-exhibit-title">Phase 1 delivers four things, each with written acceptance criteria</h3><p class="cs-exhibit-sub">Deliverables and what Avel keeps.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Deliverable</th><th>What it contains</th></tr></thead><tbody>
 <tr><td>01 · Whole-business screen</td><td>Every contract, site and clinician pool ranked on contribution, utilisation, premium labour, response tail and billing integrity, reconciled to the management accounts</td></tr>
 <tr><td>02 · Two or three deep-dives</td><td>Contrasting cases, for example one legacy emergency network, one acquired book and one outlier, traced to session-level causes and replayed under changes Avel could make</td></tr>
@@ -1765,17 +1997,17 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 </tbody></table></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan engagement scope</footer>
 </figure>
-<figure class="cs-exhibit" data-anim id="ex-7-02">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.02</span><h3 class="cs-exhibit-title">The four weeks run screen first, then depth, then the monitor</h3><p class="cs-exhibit-sub">Phase 1 workplan, days from usable data. The line marks day 0.</p></figcaption>
-  <div class="cs-exhibit-body" id="c7-02"></div>
+<figure class="cs-exhibit" data-anim id="ex-8-02">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.02</span><h3 class="cs-exhibit-title">The four weeks run screen first, then depth, then the monitor</h3><p class="cs-exhibit-sub">Phase 1 workplan, days from usable data. The line marks day 0.</p></figcaption>
+  <div class="cs-exhibit-body" id="c8-02"></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan workplan</footer>
 </figure></div>
 </div>
 <div class="cs-section">
   <h2 class="cs-headline" id="p1-hypotheses" data-subtab="Hypotheses">Six hypotheses frame the work; each can come back confirmed, rejected or resized</h2>
   <p class="cs-lede">The first four map to the pressures Avel has described. The fifth is the one-time cash test that usually funds the engagement. The sixth is a standing section for what we find that nobody asked about.</p>
-<figure class="cs-exhibit" data-anim id="ex-7-03">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.03</span><h3 class="cs-exhibit-title">The six hypotheses, the test for each, and the records that settle it</h3><p class="cs-exhibit-sub">Hypotheses are framed from the public record and this preview; none is assumed true.</p></figcaption>
+<figure class="cs-exhibit" data-anim id="ex-8-03">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.03</span><h3 class="cs-exhibit-title">The six hypotheses, the test for each, and the records that settle it</h3><p class="cs-exhibit-sub">Hypotheses are framed from the public record and this preview; none is assumed true.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Ref</th><th>Hypothesis</th><th>Test</th><th>Records</th></tr></thead><tbody>
 <tr><td>H1</td><td>Rosters follow contracted coverage hours rather than hourly demand</td><td>Utilisation by pool and hour; idle and overload hours; premium labour</td><td>eSync schedules, session logs, payroll, AP</td></tr>
 <tr><td>H2</td><td>Response tails breach in evening peaks and on acquired platforms; quality bounds efficiency</td><td>Median and P90 by service, hour, platform; guardrails on every efficiency idea</td><td>Session logs, order queue, EHR timestamps</td></tr>
@@ -1786,46 +2018,47 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 </tbody></table></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan hypothesis map</footer>
 </figure>
-<figure class="cs-exhibit" data-anim id="ex-7-04">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.04</span><h3 class="cs-exhibit-title">Every hypothesis is tested from at least three independent record sets</h3><p class="cs-exhibit-sub">Share of each hypothesis test supported by each source, %.</p></figcaption>
-  <div class="cs-exhibit-body" id="c7-04"></div>
+<figure class="cs-exhibit" data-anim id="ex-8-04">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.04</span><h3 class="cs-exhibit-title">Every hypothesis is tested from at least three independent record sets</h3><p class="cs-exhibit-sub">Share of each hypothesis test supported by each source, %.</p></figcaption>
+  <div class="cs-exhibit-body" id="c8-04"></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan method · <span>Basis</span> 100 = primary source; 50 = corroborating</footer>
 </figure>
 </div>
 <div class="cs-section">
-  <h2 class="cs-headline" id="p1-access" data-subtab="Data access">The primary ask is read-only access to the warehouse; Avel's team receives no question list</h2>
-  <p class="cs-lede">eSync already reports through Power BI, so much of what Phase 1 needs likely sits in one place. We take read-only access to the warehouse or BI layer and the source systems behind it, extract and reconcile ourselves, and send one batched request for what the warehouse cannot hold, chiefly signed contracts and uplift letters.</p>
-<figure class="cs-exhibit" data-anim id="ex-7-05">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.05</span><h3 class="cs-exhibit-title">The minimum data set, agreed on one page before anything moves</h3><p class="cs-exhibit-sub">Proposed systems, fields and period. Minimum necessary; no clinical content.</p></figcaption>
-  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>System</th><th>Fields</th><th>Period</th><th>PHI</th></tr></thead><tbody>
-<tr><td>Warehouse / Power BI</td><td>Existing datasets and their lineage</td><td>36 months</td><td>Limited</td></tr>
-<tr><td>eSync scheduling</td><td>Shifts, pools, clinician IDs, site eligibility</td><td>24 months</td><td>No</td></tr>
-<tr><td>eSync session logs</td><td>Request, connect, close times; site; service; disposition code</td><td>24 months</td><td>Limited, de-identified</td></tr>
-<tr><td>Payroll / HRIS</td><td>Hours, rates, overtime codes, hire dates</td><td>24 months</td><td>No</td></tr>
-<tr><td>Billing and AR</td><td>Invoices, credit notes, ageing by customer and service</td><td>36 months</td><td>No</td></tr>
-<tr><td>CRM</td><td>Opportunities, stages, dates, loss reasons</td><td>36 months</td><td>No</td></tr>
-<tr><td>Credentialing</td><td>Licences by state, privileges by site</td><td>Current</td><td>No</td></tr>
-<tr><td>Contracts (one request)</td><td>Signed agreements, amendments, uplift letters</td><td>All active</td><td>No</td></tr>
+  <h2 class="cs-headline" id="p1-access" data-subtab="Data access">The minimum data set fits on one page; the full access plan is on tab 07</h2>
+  <p class="cs-lede">eSync already reports through Power BI, so much of what Phase 1 needs likely sits in one place. We take one read-only role on views over the warehouse, extract and reconcile ourselves, and request one export for what the warehouse cannot hold, chiefly signed contracts and uplift letters. Avel's team receives no question list.</p>
+<figure class="cs-exhibit" data-anim id="ex-8-05">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.05</span><h3 class="cs-exhibit-title">The minimum data set, agreed on one page before anything moves</h3><p class="cs-exhibit-sub">Proposed systems, fields, period and access tier. 46 fields; no patient identifiers or clinical content (A-15).</p></figcaption>
+  <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>System</th><th>Fields</th><th>Period</th><th>Tier</th><th>Patient data</th></tr></thead><tbody>
+<tr><td>Warehouse / Power BI</td><td>Existing datasets and their lineage</td><td>36 months</td><td>1</td><td>None</td></tr>
+<tr><td>eSync scheduling</td><td>Shifts, pools, pseudonymous clinician IDs, site eligibility</td><td>24 months</td><td>1</td><td>None</td></tr>
+<tr><td>eSync session logs</td><td>Request, connect, close times; site; service; disposition code</td><td>24 months</td><td>1</td><td>Timestamps only; no patient key</td></tr>
+<tr><td>Payroll / HRIS</td><td>Hours, overtime codes, loaded rate by pool, hire dates</td><td>24 months</td><td>1</td><td>None</td></tr>
+<tr><td>Billing and AR</td><td>Invoices, credit notes, ageing by customer and service</td><td>36 months</td><td>1</td><td>None</td></tr>
+<tr><td>CRM</td><td>Opportunities, stages, dates, loss reasons</td><td>36 months</td><td>1</td><td>None</td></tr>
+<tr><td>Credentialing</td><td>Licences by state, privileges by site</td><td>Current</td><td>1</td><td>None</td></tr>
+<tr><td>Contracts (one export)</td><td>Signed agreements, amendments, uplift letters</td><td>All active</td><td>2</td><td>None</td></tr>
 </tbody></table></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan minimum data set</footer>
 </figure>
-<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-06">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.06</span><h3 class="cs-exhibit-title">Leadership gives five hours; the data contact carries most of the remaining ask</h3><p class="cs-exhibit-sub">Hours requested from Avel over four weeks, by role.</p></figcaption>
-  <div class="cs-exhibit-body" id="c7-06"></div>
-  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan engagement plan · <span>Basis</span> leadership hours capped in the terms</footer>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-8-06">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.06</span><h3 class="cs-exhibit-title">Leadership gives at most three hours; Avel's whole team gives about fifteen</h3><p class="cs-exhibit-sub">Planned hours requested from Avel over four weeks, by role.</p></figcaption>
+  <div class="cs-exhibit-body" id="c8-06"></div>
+  <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan engagement plan · <span>Basis</span> leadership hours capped in the terms · <span>Assumption</span> A-14</footer>
 </figure>
-<figure class="cs-exhibit" data-anim id="ex-7-07">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.07</span><h3 class="cs-exhibit-title">Phase 1 compresses an interview-led diagnostic into four weeks and five leadership hours</h3><p class="cs-exhibit-sub">Typical interview-led operational diagnostic against Phase 1. Typical values are CreditSwan estimates.</p></figcaption>
-  <div class="cs-exhibit-body" id="c7-07"></div>
+<figure class="cs-exhibit" data-anim id="ex-8-07">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.07</span><h3 class="cs-exhibit-title">Phase 1 compresses an interview-led diagnostic into four weeks and three leadership hours</h3><p class="cs-exhibit-sub">Typical interview-led operational diagnostic against Phase 1. Typical values are CreditSwan estimates.</p></figcaption>
+  <div class="cs-exhibit-body" id="c8-07"></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan estimate; engagement terms</footer>
 </figure></div>
-<figure class="cs-exhibit" data-anim id="ex-7-08">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.08</span><h3 class="cs-exhibit-title">Data handling is agreed in writing before access is granted</h3><p class="cs-exhibit-sub">Access model and protections.</p></figcaption>
+<figure class="cs-exhibit" data-anim id="ex-8-08">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.08</span><h3 class="cs-exhibit-title">Data handling is agreed in writing before access is granted</h3><p class="cs-exhibit-sub">Access model and protections.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Area</th><th>Commitment</th></tr></thead><tbody>
-<tr><td>Agreements</td><td>NDA and HIPAA business associate agreement before any transfer</td></tr>
-<tr><td>Access</td><td>Read-only; named CreditSwan users; SSO and MFA</td></tr>
-<tr><td>Minimum necessary</td><td>Fields agreed on one page; no clinical notes; session data de-identified where possible</td></tr>
-<tr><td>Storage</td><td>Siloed per client on AWS; AES-256 at rest; zero model egress; never used to train models</td></tr>
+<tr><td>Agreements</td><td>NDA and HIPAA business associate agreement before any access</td></tr>
+<tr><td>Access</td><td>Read-only role on views Avel defines; three named CreditSwan users; SSO and MFA; expires at day 45</td></tr>
+<tr><td>Minimum necessary</td><td>46 fields agreed on one page; no patient identifiers, no clinical content (Exhibit 7.09)</td></tr>
+<tr><td>Location</td><td>In Avel's own warehouse on request, or a CreditSwan workspace siloed per client on AWS (Exhibit 7.07)</td></tr>
+<tr><td>Storage</td><td>AES-256 at rest; SOC 2; zero model egress; never used to train models</td></tr>
 <tr><td>Close</td><td>Avel data deleted at close unless Phase 2 proceeds; deletion certified</td></tr>
 </tbody></table></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan data-handling terms</footer>
@@ -1834,18 +2067,18 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 <div class="cs-section">
   <h2 class="cs-headline" id="p1-register" data-subtab="The register">Every opportunity is sized from what we observe, in four types that are never added together</h2>
   <p class="cs-lede">Recurring earnings, capacity released, one-time cash and revenue at risk answer different questions, so the register keeps them apart. Benchmarks help frame hypotheses; they are never presented as Avel savings.</p>
-<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-09">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.09</span><h3 class="cs-exhibit-title">In the illustrative register, recurring earnings dominate and one-time cash sits mostly in billing</h3><p class="cs-exhibit-sub">Illustrative register value by type and hypothesis, $m. Types sit side by side and are never added together.</p></figcaption>
-  <div class="cs-exhibit-body" id="c7-09"></div>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-8-09">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.09</span><h3 class="cs-exhibit-title">In the illustrative register, recurring earnings dominate and one-time cash sits mostly in billing</h3><p class="cs-exhibit-sub">Illustrative register value by type and hypothesis, $m. Types sit side by side and are never added together.</p></figcaption>
+  <div class="cs-exhibit-body" id="c8-09"></div>
   <footer class="cs-basis"><span>Status</span> Illustrative &mdash; replaced with Avel source data in Phase 1 · <span>Source</span> Illustrative register · <span>Basis</span> H1 shown gross of the $0.4m evening-cover cost (R-07) · <span>Assumption</span> A-09</footer>
 </figure>
-<figure class="cs-exhibit" data-anim id="ex-7-10">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.10</span><h3 class="cs-exhibit-title">Higher-value lines take longer to land, which is why first-100-day cash is shown separately</h3><p class="cs-exhibit-sub">Illustrative register lines: months to first value against annualised value, $m.</p></figcaption>
-  <div class="cs-exhibit-body" id="c7-10"></div>
+<figure class="cs-exhibit" data-anim id="ex-8-10">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.10</span><h3 class="cs-exhibit-title">Higher-value lines take longer to land, which is why first-100-day cash is shown separately</h3><p class="cs-exhibit-sub">Illustrative register lines: months to first value against annualised value, $m.</p></figcaption>
+  <div class="cs-exhibit-body" id="c8-10"></div>
   <footer class="cs-basis"><span>Status</span> Illustrative &mdash; replaced with Avel source data in Phase 1 · <span>Source</span> Illustrative register · <span>Assumption</span> A-09</footer>
 </figure></div>
-<figure class="cs-exhibit" data-anim id="ex-7-11">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.11</span><h3 class="cs-exhibit-title">Sizing rules applied to every register line</h3><p class="cs-exhibit-sub">How an opportunity is sized, graded and reported.</p></figcaption>
+<figure class="cs-exhibit" data-anim id="ex-8-11">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.11</span><h3 class="cs-exhibit-title">Sizing rules applied to every register line</h3><p class="cs-exhibit-sub">How an opportunity is sized, graded and reported.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Rule</th><th>Application</th></tr></thead><tbody>
 <tr><td>Recurring earnings</td><td>Cost removed or price captured, net of the recurring cost of the fix</td></tr>
 <tr><td>Capacity released</td><td>Clinician hours freed, with the action that turns them into savings or growth</td></tr>
@@ -1860,18 +2093,18 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 <div class="cs-section">
   <h2 class="cs-headline" id="p1-monitor" data-subtab="Weekly monitor">Phase 1 leaves a weekly monitor running on Avel's data, with an owner for every exception</h2>
   <p class="cs-lede">The monitor is built from the same extracts as the screen, so it costs nothing extra to stand up. It runs live for two consecutive weeks inside Phase 1; Avel keeps it whether or not Phase 2 goes ahead.</p>
-<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-12">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.12</span><h3 class="cs-exhibit-title">A monitor series tells management what moved, by how much and against what threshold</h3><p class="cs-exhibit-sub">Format example: weekly P90 emergency response, minutes, against the 10-minute threshold. Illustrative.</p></figcaption>
-  <div class="cs-exhibit-body" id="c7-12"></div>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-8-12">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.12</span><h3 class="cs-exhibit-title">A monitor series tells management what moved, by how much and against what threshold</h3><p class="cs-exhibit-sub">Format example: weekly P90 emergency response, minutes, against the 10-minute threshold. Illustrative.</p></figcaption>
+  <div class="cs-exhibit-body" id="c8-12"></div>
   <footer class="cs-basis"><span>Status</span> Illustrative &mdash; replaced with Avel source data in Phase 1 · <span>Source</span> eSync session logs · <span>Basis</span> format only · <span>Assumption</span> A-07</footer>
 </figure>
-<figure class="cs-exhibit" data-anim id="ex-7-13">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.13</span><h3 class="cs-exhibit-title">The weekly board carries 22 monitors across the four pressures</h3><p class="cs-exhibit-sub">Proposed monitors by domain.</p></figcaption>
-  <div class="cs-exhibit-body" id="c7-13"></div>
+<figure class="cs-exhibit" data-anim id="ex-8-13">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.13</span><h3 class="cs-exhibit-title">The weekly board carries 22 monitors across the four pressures</h3><p class="cs-exhibit-sub">Proposed monitors by domain.</p></figcaption>
+  <div class="cs-exhibit-body" id="c8-13"></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan monitor design</footer>
 </figure></div>
-<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-14">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.14</span><h3 class="cs-exhibit-title">What a weekly exception looks like</h3><p class="cs-exhibit-sub">Exception record. Format only, not Avel data.</p></figcaption>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-8-14">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.14</span><h3 class="cs-exhibit-title">What a weekly exception looks like</h3><p class="cs-exhibit-sub">Exception record. Format only, not Avel data.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Field</th><th>Content</th></tr></thead><tbody>
 <tr><td>What changed</td><td>The metric, how far it moved and over what period, reconciled to source</td></tr>
 <tr><td>Likely cause</td><td>Traced to session, roster, contract or invoice records</td></tr>
@@ -1881,8 +2114,8 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 </tbody></table></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan monitor design</footer>
 </figure>
-<figure class="cs-exhibit" data-anim id="ex-7-15">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.15</span><h3 class="cs-exhibit-title">A sample of the 22 monitors, with thresholds proposed for agreement</h3><p class="cs-exhibit-sub">Selected monitors from tabs 03–06.</p></figcaption>
+<figure class="cs-exhibit" data-anim id="ex-8-15">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.15</span><h3 class="cs-exhibit-title">A sample of the 22 monitors, with thresholds proposed for agreement</h3><p class="cs-exhibit-sub">Selected monitors from tabs 03–06.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Domain</th><th>Monitor</th><th>Threshold</th></tr></thead><tbody>
 <tr><td>Resource</td><td>Hours above 85% utilisation, by pool</td><td>> 10% of rostered hours</td></tr>
 <tr><td>Resource</td><td>Overtime and locum share of clinical labour</td><td>> 8%</td></tr>
@@ -1898,25 +2131,26 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 <div class="cs-section">
   <h2 class="cs-headline" id="p1-terms" data-subtab="Terms and next steps">A fixed fee, half on signature, with acceptance criteria written down before we start</h2>
   <p class="cs-lede">The criteria below define a finished Phase 1. A well-supported 'no' on a hypothesis counts as a result. Weekly monitoring beyond Phase 1 is scoped and priced separately, with no obligation.</p>
-<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-16">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.16</span><h3 class="cs-exhibit-title">The screen lands by day 10, so leadership sees the whole business before the mid-point</h3><p class="cs-exhibit-sub">Days from usable data to each deliverable.</p></figcaption>
-  <div class="cs-exhibit-body" id="c7-16"></div>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-8-16">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.16</span><h3 class="cs-exhibit-title">The screen lands by day 10, so leadership sees the whole business before the mid-point</h3><p class="cs-exhibit-sub">Days from usable data to each deliverable.</p></figcaption>
+  <div class="cs-exhibit-body" id="c8-16"></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan workplan</footer>
 </figure>
-<figure class="cs-exhibit" data-anim id="ex-7-17">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.17</span><h3 class="cs-exhibit-title">Acceptance criteria</h3><p class="cs-exhibit-sub">Written into the engagement letter.</p></figcaption>
+<figure class="cs-exhibit" data-anim id="ex-8-17">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.17</span><h3 class="cs-exhibit-title">Acceptance criteria</h3><p class="cs-exhibit-sub">Written into the engagement letter.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th class="num"></th><th>Criterion</th></tr></thead><tbody>
 <tr><td class="num">1</td><td>Every figure traces to a source record and reconciles to the management accounts</td></tr>
 <tr><td class="num">2</td><td>Every contract and clinician pool screened; two or three deep-dives to the agreed depth</td></tr>
 <tr><td class="num">3</td><td>Each opportunity has a confidence level, owner, action, annualised value and first-100-day cash</td></tr>
 <tr><td class="num">4</td><td>The monitor is live on Avel data with two successful weekly refreshes</td></tr>
-<tr><td class="num">5</td><td>Avel leadership time stays inside the five-hour cap</td></tr>
-<tr><td class="num">6</td><td>Avel can make an evidence-based call on each hypothesis and on Phase 2</td></tr>
+<tr><td class="num">5</td><td>Avel leadership time stays inside the three-hour cap</td></tr>
+<tr><td class="num">6</td><td>Access expires at day 45 and deletion is certified at close</td></tr>
+<tr><td class="num">7</td><td>Avel can make an evidence-based call on each hypothesis and on Phase 2</td></tr>
 </tbody></table></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> Engagement terms</footer>
 </figure></div>
-<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-7-18">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.18</span><h3 class="cs-exhibit-title">Commercial terms</h3><p class="cs-exhibit-sub">Valid for 30 days from 2 October 2026.</p></figcaption>
+<div class="cs-grid cs-grid--2"><figure class="cs-exhibit" data-anim id="ex-8-18">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.18</span><h3 class="cs-exhibit-title">Commercial terms</h3><p class="cs-exhibit-sub">Valid for 30 days from 20 October 2026.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Term</th><th>Detail</th></tr></thead><tbody>
 <tr><td>Fee</td><td>US$45,000 fixed, inclusive of expenses</td></tr>
 <tr><td>Payment</td><td>50% on signature, 50% on delivery</td></tr>
@@ -1926,13 +2160,14 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 </tbody></table></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> Engagement terms</footer>
 </figure>
-<figure class="cs-exhibit" data-anim id="ex-7-19">
-  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 7.19</span><h3 class="cs-exhibit-title">What we ask of Avel, and the next four steps</h3><p class="cs-exhibit-sub">From signature to readout.</p></figcaption>
+<figure class="cs-exhibit" data-anim id="ex-8-19">
+  <figcaption class="cs-exhibit-head"><span class="cs-exhibit-no">Exhibit 8.19</span><h3 class="cs-exhibit-title">What we ask of Avel, and the next five steps</h3><p class="cs-exhibit-sub">From signature to readout.</p></figcaption>
   <div class="cs-exhibit-body cs-table-wrap"><table class="cs-table"><thead><tr><th>Step</th><th>Action</th><th>Timing</th></tr></thead><tbody>
-<tr><td>01</td><td>NDA, BAA and proposal signature; name the operational sponsor and data contact</td><td>Week of 12 Oct 2026</td></tr>
-<tr><td>02</td><td>CreditSwan drafts the one-page minimum data set for agreement</td><td>Within 2 days</td></tr>
-<tr><td>03</td><td>Read-only access, then a 60–90 minute kick-off</td><td>Week of 19 Oct 2026</td></tr>
-<tr><td>04</td><td>Readout four weeks after the data is usable</td><td>Mid to late Nov 2026</td></tr>
+<tr><td>01</td><td>NDA, BAA and proposal signature; name the data contact</td><td>Week of 26 Oct 2026</td></tr>
+<tr><td>02</td><td>45-minute catalogue review with the data contact (Tier 0); one-page data map agreed</td><td>Within 3 business days</td></tr>
+<tr><td>03</td><td>Read-only role live, then a 30-minute kick-off</td><td>Week of 2 Nov 2026</td></tr>
+<tr><td>04</td><td>Whole-business screen</td><td>Mid Nov 2026</td></tr>
+<tr><td>05</td><td>Readout four weeks after the data is usable, before FY2027 budgets lock</td><td>Week of 30 Nov 2026</td></tr>
 </tbody></table></div>
   <footer class="cs-basis"><span>Status</span> Engagement format · <span>Source</span> CreditSwan proposal</footer>
 </figure></div>
@@ -1942,18 +2177,18 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
 
 <section class="cs-panel" id="assumptions" role="tabpanel">
   <div class="cs-panel-head" data-anim>
-    <span class="cs-label cs-fade">Section 08 · Assumptions and method</span>
+    <span class="cs-label cs-fade">Section 09 · Assumptions and method</span>
     <h1 class="cs-headline cs-fade" style="--i:1">Every number in this preview can be traced to a public source or an assumption stated here</h1>
     <p class="cs-lede cs-fade" style="--i:2">This is the register. Each assumption used anywhere in the preview appears once, with its identifier, the value used, its basis, and how far the headline moves if it is wrong. Tabs reference the identifiers rather than restating them.</p>
   </div>
   <div class="cs-section">
     <h2 class="cs-headline" id="as-register" data-subtab="Register">Assumptions register</h2>
-    <p class="cs-lede">Identifiers are stable across versions. In Phase 1, assumptions A-01 to A-11 are replaced by measured values from Avel's records; A-12 and A-13 remain public comparators.</p>
+    <p class="cs-lede">Identifiers are stable across versions. In Phase 1, assumptions A-01 to A-11 are replaced by measured values from Avel's records; A-12 and A-13 remain public comparators; A-14 to A-17 describe the access plan and are confirmed in the Tier 0 review.</p>
     <figure class="cs-exhibit" data-anim>
       <div class="cs-exhibit-body cs-table-wrap">
         <table class="cs-table" data-sortable>
           <thead><tr><th>Ref</th><th>Assumption</th><th class="num">Value used</th><th>Basis</th><th class="num">Sensitivity</th><th>Used in</th></tr></thead>
-          <tbody><tr><td><span class="cs-aid">A-01</span></td><td>Sizing base for every illustrative dollar figure</td><td class="num">$92m revenue</td><td>Avel FY2024 revenue, company-published; Phase 1 uses TTM to the latest close</td><td class="num">Register scales ~1:1 with revenue</td><td>01, 03–07</td></tr><tr><td><span class="cs-aid">A-02</span></td><td>Gross margin and cost of delivery</td><td class="num">39% · $56.1m</td><td>Avel FY2024 gross margin, company-published; cost of delivery derived</td><td class="num">±$0.9m cost base per 1 pt</td><td>01, 03, 06</td></tr><tr><td><span class="cs-aid">A-03</span></td><td>Clinical labour as a share of cost of delivery</td><td class="num">82% · $46.0m</td><td>Illustrative; typical of labour-led clinical services</td><td class="num">±$0.3m on R-01/R-02 per 5 pts</td><td>01, 03, 06</td></tr><tr><td><span class="cs-aid">A-04</span></td><td>Service-line revenue mix</td><td class="num">10 lines summing to $92m</td><td>Illustrative split; Avel does not publish service-line revenue</td><td class="num">Re-ranks levers; total unchanged</td><td>01, 03–06</td></tr><tr><td><span class="cs-aid">A-05</span></td><td>Safe utilisation band per clinician-hour</td><td class="num">40–85%</td><td>Illustrative; set service by service with clinical leadership in Phase 1</td><td class="num">±$0.4m on R-01 per 5 pts on the floor</td><td>03, 04</td></tr><tr><td><span class="cs-aid">A-06</span></td><td>Clinician cost growth against contract escalators</td><td class="num">5.0% vs 3.5% p.a.</td><td>Escalator from the public Geneva EMS agreement; wage growth illustrative</td><td class="num">±$0.3m on R-03 per 1 pt</td><td>05, 06</td></tr><tr><td><span class="cs-aid">A-07</span></td><td>Emergency response standard</td><td class="num">≤10 min to clinician on screen</td><td>Illustrative; Phase 1 reads the standard in each signed contract</td><td class="num">Changes breach counts, not P90</td><td>04</td></tr><tr><td><span class="cs-aid">A-08</span></td><td>Cost-to-serve allocation</td><td class="num">Shared pools by encounter minutes</td><td>Illustrative; supervision, technology and account support allocated by minutes</td><td class="num">±4 pts on bottom-decile contracts</td><td>06</td></tr><tr><td><span class="cs-aid">A-09</span></td><td>Confidence grades on register lines</td><td class="num">High · Medium · Low</td><td>High: observed in source records; Medium: observed, fix untested; Low: inferred</td><td class="num">—</td><td>01, 07</td></tr><tr><td><span class="cs-aid">A-10</span></td><td>Cross-sell conversion of single-service sites</td><td class="num">15% over 24 months</td><td>Illustrative; Phase 1 replaces with Avel's observed second-service rate</td><td class="num">±$0.2m contribution per 5 pts</td><td>05</td></tr><tr><td><span class="cs-aid">A-11</span></td><td>Share of billable excess-use and after-hours events not invoiced</td><td class="num">30%</td><td>Illustrative; pharmacy additional-hours policy is public, invoicing rate is not</td><td class="num">±$0.13m recurring per 10 pts</td><td>06</td></tr><tr><td><span class="cs-aid">A-12</span></td><td>Peer margin comparator</td><td class="num">6.9% adj. EBITDA</td><td>Hicuity Health, per DocGo's August 2026 announcement; one peer, one period</td><td class="num">Comparator only; not a target</td><td>01, 06</td></tr><tr><td><span class="cs-aid">A-13</span></td><td>EBITDA base for the bridge</td><td class="num">15% · $13.8m</td><td>Avel describes FY2024 EBITDA as 'mid-teens'; 15% used as the midpoint</td><td class="num">±$0.9m per 1 pt</td><td>01, 06</td></tr></tbody>
+          <tbody><tr><td><span class="cs-aid">A-01</span></td><td>Sizing base for every illustrative dollar figure</td><td class="num">$92m revenue</td><td>Avel FY2024 revenue, company-published; Phase 1 uses TTM to the latest close</td><td class="num">Register scales ~1:1 with revenue</td><td>01, 03–06, 08</td></tr><tr><td><span class="cs-aid">A-02</span></td><td>Gross margin and cost of delivery</td><td class="num">39% · $56.1m</td><td>Avel FY2024 gross margin, company-published; cost of delivery derived</td><td class="num">±$0.9m cost base per 1 pt</td><td>01, 03, 06</td></tr><tr><td><span class="cs-aid">A-03</span></td><td>Clinical labour as a share of cost of delivery</td><td class="num">82% · $46.0m</td><td>Illustrative; typical of labour-led clinical services</td><td class="num">±$0.3m on R-01/R-02 per 5 pts</td><td>01, 03, 06</td></tr><tr><td><span class="cs-aid">A-04</span></td><td>Service-line revenue mix</td><td class="num">10 lines summing to $92m</td><td>Illustrative split; Avel does not publish service-line revenue</td><td class="num">Re-ranks levers; total unchanged</td><td>01, 03–06</td></tr><tr><td><span class="cs-aid">A-05</span></td><td>Safe utilisation band per clinician-hour</td><td class="num">40–85%</td><td>Illustrative; set service by service with clinical leadership in Phase 1</td><td class="num">±$0.4m on R-01 per 5 pts on the floor</td><td>03, 04</td></tr><tr><td><span class="cs-aid">A-06</span></td><td>Clinician cost growth against contract escalators</td><td class="num">5.0% vs 3.5% p.a.</td><td>Escalator from the public Geneva EMS agreement; wage growth illustrative</td><td class="num">±$0.3m on R-03 per 1 pt</td><td>05, 06</td></tr><tr><td><span class="cs-aid">A-07</span></td><td>Emergency response standard</td><td class="num">≤10 min to clinician on screen</td><td>Illustrative; Phase 1 reads the standard in each signed contract</td><td class="num">Changes breach counts, not P90</td><td>04</td></tr><tr><td><span class="cs-aid">A-08</span></td><td>Cost-to-serve allocation</td><td class="num">Shared pools by encounter minutes</td><td>Illustrative; supervision, technology and account support allocated by minutes</td><td class="num">±4 pts on bottom-decile contracts</td><td>06</td></tr><tr><td><span class="cs-aid">A-09</span></td><td>Confidence grades on register lines</td><td class="num">High · Medium · Low</td><td>High: observed in source records; Medium: observed, fix untested; Low: inferred</td><td class="num">—</td><td>01, 08</td></tr><tr><td><span class="cs-aid">A-10</span></td><td>Cross-sell conversion of single-service sites</td><td class="num">15% over 24 months</td><td>Illustrative; Phase 1 replaces with Avel's observed second-service rate</td><td class="num">±$0.2m contribution per 5 pts</td><td>05</td></tr><tr><td><span class="cs-aid">A-11</span></td><td>Share of billable excess-use and after-hours events not invoiced</td><td class="num">30%</td><td>Illustrative; pharmacy additional-hours policy is public, invoicing rate is not</td><td class="num">±$0.13m recurring per 10 pts</td><td>06</td></tr><tr><td><span class="cs-aid">A-12</span></td><td>Peer margin comparator</td><td class="num">6.9% adj. EBITDA</td><td>Hicuity Health, per DocGo's August 2026 announcement; one peer, one period</td><td class="num">Comparator only; not a target</td><td>01, 06</td></tr><tr><td><span class="cs-aid">A-13</span></td><td>EBITDA base for the bridge</td><td class="num">15% · $13.8m</td><td>Avel describes FY2024 EBITDA as 'mid-teens'; 15% used as the midpoint</td><td class="num">±$0.9m per 1 pt</td><td>01, 06</td></tr><tr><td><span class="cs-aid">A-14</span></td><td>Avel data-contact time over Phase 1</td><td class="num">~8 hours</td><td>CreditSwan estimate: catalogue review, role grant, weekly 30-minute mapping slot and ad hoc access support</td><td class="num">±3 h if acquired platforms sit outside the warehouse</td><td>07, 08</td></tr><tr><td><span class="cs-aid">A-15</span></td><td>Size of the minimum data set</td><td class="num">46 fields</td><td>CreditSwan draft, mapped to Avel tables in the Tier 0 catalogue review</td><td class="num">Field count moves; patient identifiers stay at zero</td><td>07, 08</td></tr><tr><td><span class="cs-aid">A-16</span></td><td>Warehouse platform and BI layer</td><td class="num">Not public; Power BI confirmed</td><td>eSync reports through Power BI (public); the warehouse platform is confirmed in Tier 0</td><td class="num">Changes which access option is fastest, not the scope</td><td>07</td></tr><tr><td><span class="cs-aid">A-17</span></td><td>Read-only role created within a week of signature</td><td class="num">7 days</td><td>Typical for a scoped read-only role on existing views</td><td class="num">Each week of delay moves every date in Exhibit 7.16</td><td>07</td></tr></tbody>
         </table>
       </div>
       <footer class="cs-basis"><span>Basis</span> Register maintained by CreditSwan; values are for this preview only</footer>
@@ -1964,36 +2199,37 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
     <p class="cs-lede">How the preview was built, and how Phase 1 differs.</p>
     <div class="cs-grid cs-grid--2" data-anim>
       <div>
-        <aside class="cs-callout cs-callout--note cs-fade"><span class="cs-callout-kicker">Method · this preview</span><p>Built from 103 public URLs across 58 domains, without any access to Avel. Public figures were checked against primary records; where Avel publishes no figure, the preview shows an illustrative one and labels it.</p></aside>
+        <aside class="cs-callout cs-callout--note cs-fade"><span class="cs-callout-kicker">Method · this preview</span><p>Built from 103 public URLs across 58 domains for the first edition and 12 further primary sources retrieved on 20 October 2026, without any access to Avel. Public figures were checked against primary records; where Avel publishes no figure, the preview shows an illustrative one and labels it.</p></aside>
         <aside class="cs-callout cs-callout--note cs-fade" style="--i:1"><span class="cs-callout-kicker">Method · illustrative inputs</span><p>Illustrative figures are internally consistent: service lines sum to the public $92m revenue and 39% gross margin, and register lines reconcile across tabs. They show the format of an answer, not the answer.</p></aside>
       </div>
       <div>
         <aside class="cs-callout cs-callout--note cs-fade" style="--i:2"><span class="cs-callout-kicker">Method · Phase 1</span><p>Phase 1 reads source systems directly, reconciles them to the management accounts, and replaces every illustrative figure. Each finding carries its source record, confidence grade and owner.</p></aside>
-        <aside class="cs-callout cs-callout--caution cs-fade" style="--i:3"><span class="cs-callout-kicker">What this preview does not do</span><p>It does not estimate Avel's current revenue, valuation, leverage or covenant position, and it does not assess clinical quality. It sets out the operating questions and how they will be answered.</p></aside>
+        <aside class="cs-callout cs-callout--note cs-fade" style="--i:3"><span class="cs-callout-kicker">What changed in this edition</span><p>New public developments (Exhibits 1.20 to 1.23); a new Data access tab (tab 07); leadership time cut from five hours to three; patient identifiers removed from the data set; dates and terms refreshed. Exhibit numbers from the first edition are unchanged except that Phase 1 exhibits moved from 7.xx to 8.xx.</p></aside>
+        <aside class="cs-callout cs-callout--caution cs-fade" style="--i:4"><span class="cs-callout-kicker">What this preview does not do</span><p>It does not estimate Avel's current revenue, valuation, leverage or covenant position, and it does not assess clinical quality. It sets out the operating questions and how they will be answered.</p></aside>
       </div>
     </div>
   </div>
   <div class="cs-section">
     <h2 class="cs-headline" id="as-sources" data-subtab="Key sources">Key public sources</h2>
-    <p class="cs-lede">Twenty of the 103 sources, those behind the public figures in this preview. The full index accompanies the market research.</p>
+    <p class="cs-lede">Thirty-two sources: the twenty behind the first edition's public figures and twelve added for this edition. The full index accompanies the market research.</p>
     <figure class="cs-exhibit" data-anim>
       <div class="cs-exhibit-body cs-table-wrap">
-        <table class="cs-table"><thead><tr><th>Source</th><th>Used for</th></tr></thead><tbody><tr><td><a href="https://www.avelecare.com/driving-profitability-and-growth/" target="_blank" rel="noopener">Avel financial growth disclosure</a></td><td>FY21 and FY24 revenue, margin, EBITDA description</td></tr><tr><td><a href="https://aquiline.com/news/avera-health-announces-ownership-transition-of-avera-ecare-to-aquiline/" target="_blank" rel="noopener">Aquiline transaction announcement</a></td><td>2021 carve-out footprint</td></tr><tr><td><a href="https://www.avelecare.com/avel-ecare-announces-acquisition-of-amwell-psychiatric-care-to-expand-telemedicine-services/" target="_blank" rel="noopener">Avel APC acquisition announcement</a></td><td>45+ states; APC scope</td></tr><tr><td><a href="https://www.sec.gov/Archives/edgar/data/1393584/000139358426000010/ars_-_annual_report_1231.pdf" target="_blank" rel="noopener">Amwell 2025 annual report (Form 10-K)</a></td><td>APC revenue and consideration</td></tr><tr><td><a href="https://investors.amwell.com/news-releases/news-release-details/amwellr-announces-results-second-quarter-2026" target="_blank" rel="noopener">Amwell Q2 2026 results</a></td><td>APC proceeds, H1 2026</td></tr><tr><td><a href="https://www.avelecare.com/avel-ecare-unveils-new-esync-platform-for-enhanced-telemedicine-services/" target="_blank" rel="noopener">eSync platform announcement</a></td><td>Scheduling, Power BI reporting</td></tr><tr><td><a href="https://genevane.org/Archive/ViewFile/Item/882" target="_blank" rel="noopener">Geneva council packet, Exhibit C</a></td><td>EMS pricing and 3.5% escalator</td></tr><tr><td><a href="https://www.avelecare.com/wp-content/uploads/2025/09/Pharmacy-Additional-Hours-of-Coverage-2025.pdf" target="_blank" rel="noopener">Pharmacy additional-hours policy</a></td><td>Charges outside contracted hours</td></tr><tr><td><a href="https://www.coronavirus.kdheks.gov/DocumentCenter/View/58981/REH-CAP-and-RPGP-Award-Winners-PDF" target="_blank" rel="noopener">Kansas award document</a></td><td>$5m grant, 31 hospitals</td></tr><tr><td><a href="https://alliantpurchasing.com/2025/06/18/avel-ecare-and-alliant-purchasing-announce-strategic-partnership-to-expand-access-to-virtual-care-services/" target="_blank" rel="noopener">Alliant Purchasing partnership</a></td><td>Channel membership</td></tr><tr><td><a href="https://www.globalmedicalresponse.com/news/global-medical-response-avel-ecare-partner-to-reimagine-911-access-for-rural-america" target="_blank" rel="noopener">Global Medical Response collaboration</a></td><td>911 REACT</td></tr><tr><td><a href="https://docgo.com/press/docgo-signs-definitive-agreement-to-acquire-virtual-care-provider-hicuity-health-perceptive-advisors-commits-to-new-term-loan-funding/" target="_blank" rel="noopener">DocGo / Hicuity announcement</a></td><td>Peer margin comparator</td></tr><tr><td><a href="https://www.hhs.gov/sites/default/files/hhs-terminated-contracts-list.pdf" target="_blank" rel="noopener">HHS terminated-contracts list</a></td><td>IHS contract partial termination</td></tr><tr><td><a href="https://www.chartis.com/insights/2026-rural-health-state-state" target="_blank" rel="noopener">Chartis 2026 rural health analysis</a></td><td>41.2% negative margins</td></tr><tr><td><a href="https://www.aha.org/system/files/media/file/2026/02/Fast-Facts-on-US-Hospitals-2026.pdf" target="_blank" rel="noopener">AHA Fast Facts 2026</a></td><td>Hospital counts</td></tr><tr><td><a href="https://www.flexmonitoring.org/historical-cah-data-0" target="_blank" rel="noopener">Flex Monitoring Team CAH data</a></td><td>1,388 CAHs</td></tr><tr><td><a href="https://pubmed.ncbi.nlm.nih.gov/32835620/" target="_blank" rel="noopener">Prospective six-network tele-ED study</a></td><td>20.4% transfers averted</td></tr><tr><td><a href="https://mental.jmir.org/2023/1/e42610" target="_blank" rel="noopener">Virtual Crisis Care evaluation (JMIR)</a></td><td>75.7% remained in place</td></tr><tr><td><a href="https://www.cms.gov/files/document/telehealth-faq-updated-02-26-2026.pdf" target="_blank" rel="noopener">CMS telehealth FAQ, 26 Feb 2026</a></td><td>Medicare flexibilities to 2027</td></tr><tr><td><a href="https://www.dea.gov/press-releases/2025/12/31/dea-extends-telemedicine-flexibilities-ensure-continued-access-care" target="_blank" rel="noopener">DEA telemedicine extension</a></td><td>Prescribing to 31 Dec 2026</td></tr></tbody></table>
+        <table class="cs-table"><thead><tr><th>Source</th><th>Used for</th></tr></thead><tbody><tr><td><a href="https://www.avelecare.com/driving-profitability-and-growth/" target="_blank" rel="noopener">Avel financial growth disclosure</a></td><td>FY21 and FY24 revenue, margin, EBITDA description</td></tr><tr><td><a href="https://aquiline.com/news/avera-health-announces-ownership-transition-of-avera-ecare-to-aquiline/" target="_blank" rel="noopener">Aquiline transaction announcement</a></td><td>2021 carve-out footprint</td></tr><tr><td><a href="https://www.avelecare.com/avel-ecare-announces-acquisition-of-amwell-psychiatric-care-to-expand-telemedicine-services/" target="_blank" rel="noopener">Avel APC acquisition announcement</a></td><td>45+ states; APC scope</td></tr><tr><td><a href="https://www.sec.gov/Archives/edgar/data/1393584/000139358426000010/ars_-_annual_report_1231.pdf" target="_blank" rel="noopener">Amwell 2025 annual report (Form 10-K)</a></td><td>APC revenue and consideration</td></tr><tr><td><a href="https://investors.amwell.com/news-releases/news-release-details/amwellr-announces-results-second-quarter-2026" target="_blank" rel="noopener">Amwell Q2 2026 results</a></td><td>APC proceeds, H1 2026</td></tr><tr><td><a href="https://www.avelecare.com/avel-ecare-unveils-new-esync-platform-for-enhanced-telemedicine-services/" target="_blank" rel="noopener">eSync platform announcement</a></td><td>Scheduling, Power BI reporting</td></tr><tr><td><a href="https://genevane.org/Archive/ViewFile/Item/882" target="_blank" rel="noopener">Geneva council packet, Exhibit C</a></td><td>EMS pricing and 3.5% escalator</td></tr><tr><td><a href="https://www.avelecare.com/wp-content/uploads/2025/09/Pharmacy-Additional-Hours-of-Coverage-2025.pdf" target="_blank" rel="noopener">Pharmacy additional-hours policy</a></td><td>Charges outside contracted hours</td></tr><tr><td><a href="https://www.coronavirus.kdheks.gov/DocumentCenter/View/58981/REH-CAP-and-RPGP-Award-Winners-PDF" target="_blank" rel="noopener">Kansas award document</a></td><td>$5m grant, 31 hospitals</td></tr><tr><td><a href="https://alliantpurchasing.com/2025/06/18/avel-ecare-and-alliant-purchasing-announce-strategic-partnership-to-expand-access-to-virtual-care-services/" target="_blank" rel="noopener">Alliant Purchasing partnership</a></td><td>Channel membership</td></tr><tr><td><a href="https://www.globalmedicalresponse.com/news/global-medical-response-avel-ecare-partner-to-reimagine-911-access-for-rural-america" target="_blank" rel="noopener">Global Medical Response collaboration</a></td><td>911 REACT</td></tr><tr><td><a href="https://docgo.com/press/docgo-signs-definitive-agreement-to-acquire-virtual-care-provider-hicuity-health-perceptive-advisors-commits-to-new-term-loan-funding/" target="_blank" rel="noopener">DocGo / Hicuity announcement</a></td><td>Peer margin comparator</td></tr><tr><td><a href="https://www.hhs.gov/sites/default/files/hhs-terminated-contracts-list.pdf" target="_blank" rel="noopener">HHS terminated-contracts list</a></td><td>IHS contract partial termination</td></tr><tr><td><a href="https://www.chartis.com/insights/2026-rural-health-state-state" target="_blank" rel="noopener">Chartis 2026 rural health analysis</a></td><td>41.2% negative margins</td></tr><tr><td><a href="https://www.aha.org/system/files/media/file/2026/02/Fast-Facts-on-US-Hospitals-2026.pdf" target="_blank" rel="noopener">AHA Fast Facts 2026</a></td><td>Hospital counts</td></tr><tr><td><a href="https://www.flexmonitoring.org/historical-cah-data-0" target="_blank" rel="noopener">Flex Monitoring Team CAH data</a></td><td>1,388 CAHs</td></tr><tr><td><a href="https://pubmed.ncbi.nlm.nih.gov/32835620/" target="_blank" rel="noopener">Prospective six-network tele-ED study</a></td><td>20.4% transfers averted</td></tr><tr><td><a href="https://mental.jmir.org/2023/1/e42610" target="_blank" rel="noopener">Virtual Crisis Care evaluation (JMIR)</a></td><td>75.7% remained in place</td></tr><tr><td><a href="https://www.cms.gov/files/document/telehealth-faq-updated-02-26-2026.pdf" target="_blank" rel="noopener">CMS telehealth FAQ, 26 Feb 2026</a></td><td>Medicare flexibilities to 2027</td></tr><tr><td><a href="https://www.dea.gov/press-releases/2025/12/31/dea-extends-telemedicine-flexibilities-ensure-continued-access-care" target="_blank" rel="noopener">DEA telemedicine extension</a></td><td>Prescribing to 31 Dec 2026</td></tr><tr><td><a href="https://www.accessnewswire.com/newsroom/en/healthcare-and-pharmaceutical/avel-ecare-appoints-martainn-lenhardt-as-chief-financial-officer-to-l-1051750" target="_blank" rel="noopener">Avel CFO appointment, 23 Jul 2025</a></td><td>Leadership bench</td></tr><tr><td><a href="https://www.accessnewswire.com/newsroom/en/healthcare-and-pharmaceutical/avel-ecare-welcomes-pat-gundersen-as-new-chief-revenue-officer-1112492" target="_blank" rel="noopener">Avel CRO appointment, 2 Dec 2025</a></td><td>Leadership bench; CRO remit</td></tr><tr><td><a href="https://www.accessnewswire.com/newsroom/en/healthcare-and-pharmaceutical/avel-ecare-appoints-rich-sanders-as-chief-operating-officer-1156486" target="_blank" rel="noopener">Avel COO appointment, 13 Apr 2026</a></td><td>Leadership bench</td></tr><tr><td><a href="https://siouxfalls.business/?p=98999" target="_blank" rel="noopener">Sioux Falls Business, Nov 2021</a></td><td>CEO appointment; Aquiline closing</td></tr><tr><td><a href="https://sdaho.org/2026/05/13/avel-ecare-advancing-rural-health-care-through-partnership-innovation-and-transformation/" target="_blank" rel="noopener">SDAHO member spotlight, May 2026</a></td><td>CMO named</td></tr><tr><td><a href="https://comvest.com/comvest-credit-partners-announces-investment-in-avel-ecare/" target="_blank" rel="noopener">Comvest Credit Partners release, 8 Dec 2021</a></td><td>Senior secured facility; administrative agent</td></tr><tr><td><a href="https://www.streetinsider.com/PRNewswire/Manulife+Completes+Acquisition+of+Comvest+Credit+Partners/25542117.html" target="_blank" rel="noopener">Manulife completion release, 3 Nov 2025</a></td><td>Comvest ownership</td></tr><tr><td><a href="https://www.beckershospitalreview.com/finance/rural-health-transformation-program-funding-status-by-state/" target="_blank" rel="noopener">Becker's RHT funding status by state, 2 Sep 2026</a></td><td>FY2026 state awards</td></tr><tr><td><a href="https://aasm.org/congress-ends-partial-government-shutdown-and-extends-telehealth-flexibilities-and-the-work-gpci-floor-through-2027/" target="_blank" rel="noopener">Consolidated Appropriations Act, 2026 summary</a></td><td>Medicare telehealth to 31 Dec 2027</td></tr><tr><td><a href="https://www.federalregister.gov/documents/2025/12/31/2025-24123/fourth-temporary-extension-of-covid-19-telemedicine-flexibilities-for-prescription-of-controlled" target="_blank" rel="noopener">DEA fourth extension, Federal Register</a></td><td>Prescribing to 31 Dec 2026</td></tr><tr><td><a href="https://hlth.com/insights/news/docgo-to-acquire-hicuity-health-as-q2-loss-widens-and-revenue-declines" target="_blank" rel="noopener">HLTH on DocGo / Hicuity terms, 18 Aug 2026</a></td><td>Hicuity revenue and debt assumed</td></tr><tr><td><a href="https://www.sec.gov/Archives/edgar/data/0001822359/000162828026064740/dcgo-20261001.htm" target="_blank" rel="noopener">DocGo Form 8-K, 1 Oct 2026</a></td><td>Hicuity management agreement; deal pending</td></tr></tbody></table>
       </div>
-      <footer class="cs-basis"><span>Retrieved</span> Research dated 2 October 2026; dynamic web pages can change after that date</footer>
+      <footer class="cs-basis"><span>Retrieved</span> First edition 2 October 2026; new sources 20 October 2026; dynamic web pages can change after those dates</footer>
     </figure>
   </div>
 </section>
 
 <section class="cs-panel" id="faq" role="tabpanel">
   <div class="cs-panel-head" data-anim>
-    <span class="cs-label cs-fade">Section 09 · Frequently asked questions</span>
+    <span class="cs-label cs-fade">Section 10 · Frequently asked questions</span>
     <h1 class="cs-headline cs-fade" style="--i:1">Questions Avel's leadership is likely to ask about this preview and Phase 1</h1>
     <p class="cs-lede cs-fade" style="--i:2">Each answer opens with the short version, then the detail. Nothing here introduces a number that is not already in the preview.</p>
   </div>
   <div class="cs-section" data-anim>
     <h2 class="cs-headline" id="faq-scope" data-subtab="Scope">About this preview</h2>
-    <div class="cs-faq-group"><span class="cs-label">Scope</span><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What is this document, and what is it not?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>It is a preview of a four-week diagnostic, built from public sources only, showing the questions Phase 1 answers and the form of the answers.</p><p>It is not a finding about Avel's operations. Every internal-style figure, from utilisation to contract margins, is illustrative and labelled so in its basis line. Phase 1 replaces each one with Avel's own data, reconciled to the management accounts.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Which figures are real?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Those marked Public-source or Calculated in each exhibit's basis line.</p><p>They include Avel's FY2021 and FY2024 revenue and margin, the five acquisitions, APC transaction terms from Amwell's SEC filings, the Geneva EMS agreement, channel announcements, market counts and peer-reviewed study results. Exhibit 1.18 counts exhibits by evidence class.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Why does the preview use FY2024 revenue as its base?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>It is the latest revenue figure Avel has published.</p><p>Every illustrative dollar figure is sized on $92m (A-01). The preview deliberately does not add APC's historical revenue to construct a current figure, because acquisition timing, churn and accounting make that arithmetic unreliable. Phase 1 uses trailing twelve months to the latest close.</p></div></div></div></div>
+    <div class="cs-faq-group"><span class="cs-label">Scope</span><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What has changed since the first edition?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>New public developments, a dedicated data access plan, and a smaller ask.</p><p>Exhibits 1.20 to 1.23 add the new leadership bench, the Hicuity transaction and FY2026 rural funding. Tab 07 is new and sets out the access in full. Leadership time falls from five hours to three, Avel's total time from 29 hours to about 15 (Exhibit 7.03), and the data set no longer reads patient identifiers. Dates and terms are refreshed.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What is this document, and what is it not?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>It is a preview of a four-week diagnostic, built from public sources only, showing the questions Phase 1 answers and the form of the answers.</p><p>It is not a finding about Avel's operations. Every internal-style figure, from utilisation to contract margins, is illustrative and labelled so in its basis line. Phase 1 replaces each one with Avel's own data, reconciled to the management accounts.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Which figures are real?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Those marked Public-source or Calculated in each exhibit's basis line.</p><p>They include Avel's FY2021 and FY2024 revenue and margin, the five acquisitions, the developments in Exhibit 1.20, APC transaction terms from Amwell's SEC filings, the Geneva EMS agreement, channel announcements, market counts and peer-reviewed study results. Exhibit 1.18 counts exhibits by evidence class.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Why does the preview use FY2024 revenue as its base?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>It is the latest revenue figure Avel has published.</p><p>Every illustrative dollar figure is sized on $92m (A-01). The preview deliberately does not add APC's historical revenue to construct a current figure, because acquisition timing, churn and accounting make that arithmetic unreliable. Phase 1 uses trailing twelve months to the latest close.</p></div></div></div></div>
   </div>
 <div class="cs-section" data-anim>
     <h2 class="cs-headline" id="faq-reading" data-subtab="Interpretation">Reading the exhibits</h2>
@@ -2001,22 +2237,22 @@ html[data-cs-surface="ink"] #about .ab-clock .bar.teal{color:#16211F}
   </div>
 <div class="cs-section" data-anim>
     <h2 class="cs-headline" id="faq-provenance" data-subtab="Provenance">Data and assumptions</h2>
-    <div class="cs-faq-group"><span class="cs-label">Provenance</span><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What data would Avel need to provide?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Read-only access to the data warehouse and the source systems behind it, plus one batched request for signed contracts.</p><p>Exhibit 7.05 lists the minimum data set. eSync already reports through Power BI, so much of it may sit in one place. Avel's team does not receive a question list; CreditSwan does the extraction and reconciliation.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">How is patient information protected?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>An NDA and a HIPAA business associate agreement are signed before anything moves, and only minimum necessary fields are read.</p><p>No clinical notes are extracted. Session data is de-identified where possible, stored in a client-siloed environment, never used to train models, and deleted at close unless Phase 2 proceeds (Exhibit 7.08).</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What if the largest assumption is wrong?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>The register moves, but the method does not.</p><p>Exhibit 6.20 shows the sensitivity of the illustrative register to each assumption. The largest swings come from the utilisation floor (A-05) and the revenue base (A-01), each about $0.4m. Phase 1 measures both rather than assuming them.</p></div></div></div></div>
+    <div class="cs-faq-group"><span class="cs-label">Provenance</span><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What does our IT team actually have to do?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Walk us through the catalogue for 45 minutes, create one read-only role on views it writes, and hold a 30-minute weekly slot.</p><p>The planned total for the data contact is about eight hours over four weeks (A-14, Exhibit 7.01). Avel is not asked to clean, reshape or document any table; CreditSwan maps and reconciles what it finds.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Can the analysis run inside our own environment?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Yes, where the warehouse supports a scoped read-only role.</p><p>Option A in Exhibit 7.07 runs the analysis where the data sits, so only aggregated results leave Avel. A secure extract or a Power BI read are the alternatives; Avel chooses in the Tier 0 review.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Can we stop access part-way through?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Yes, the same day, without a notice period.</p><p>Access also expires at day 45 on its own (Exhibit 7.12). If access ends early, the register states what was tested up to that point and what was not.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What data would Avel need to provide?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>One read-only role on warehouse views Avel's team defines, plus one export of signed contracts.</p><p>Exhibit 8.05 lists the minimum data set and Exhibit 7.04 the tiers in which access opens. eSync already reports through Power BI, so much of it may sit in one place. Avel's team does not receive a question list; CreditSwan does the extraction, mapping and reconciliation.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">How is patient information protected?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Phase 1 reads no patient identifiers and no clinical content, and an NDA and a HIPAA business associate agreement are signed before any access.</p><p>Encounter timestamps are taken without a patient key (Exhibit 7.09). Data is read in place or held in a client-siloed environment, never used to train models, and deleted at close unless Phase 2 proceeds (Exhibits 7.11 and 8.08).</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What if the largest assumption is wrong?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>The register moves, but the method does not.</p><p>Exhibit 6.20 shows the sensitivity of the illustrative register to each assumption. The largest swings come from the utilisation floor (A-05) and the revenue base (A-01), each about $0.4m. Phase 1 measures both rather than assuming them.</p></div></div></div></div>
   </div>
 <div class="cs-section" data-anim>
     <h2 class="cs-headline" id="faq-findings" data-subtab="Findings">The four pressures</h2>
-    <div class="cs-faq-group"><span class="cs-label">Findings</span><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Is the $4.2m register a forecast of savings?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>No. It is an illustrative register that shows how opportunities are sized, graded and owned.</p><p>Its lines reconcile across tabs and rest on stated assumptions, so it is a realistic shape. The real register comes from Phase 1, may be larger or smaller, and may reject hypotheses outright; a well-supported 'no' counts as a result.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Why connect resource allocation, service levels, sales and margins?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Because they are one chain: rosters set response times, response times shape renewals, and renewals set price against cost.</p><p>Treating them separately risks cutting hours that protect renewals, or chasing price on contracts already in breach. Exhibit 1.06 maps the chain; the register nets the cost of evening cover (R-07) against the roster savings.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What does the HHS contract listing mean?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>It records a partial termination or scope reduction on an Avel contract; it does not show the revenue effect or imply poor performance.</p><p>Phase 1 reconciles the contract, its modifications and the invoices before and after. Exhibit 1.19 lists it with other dated policy events.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Why compare Avel with Hicuity?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Because it is the one recent public margin figure for a comparable clinical virtual-care business.</p><p>It frames the range of outcomes (A-12). It is one peer at one point in time, with different services and definitions, and it is not a target for Avel.</p></div></div></div></div>
+    <div class="cs-faq-group"><span class="cs-label">Findings</span><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Why mention the Hicuity transaction?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Because it is the most recent public price for a comparable clinical virtual-care business.</p><p>DocGo agreed to acquire Hicuity mainly by assuming debt, at about 0.8x trailing revenue before equity and contingent consideration (Exhibit 1.23). It frames how buyers and lenders value the sector; it says nothing about Avel's value.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Is the $4.2m register a forecast of savings?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>No. It is an illustrative register that shows how opportunities are sized, graded and owned.</p><p>Its lines reconcile across tabs and rest on stated assumptions, so it is a realistic shape. The real register comes from Phase 1, may be larger or smaller, and may reject hypotheses outright; a well-supported 'no' counts as a result.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Why connect resource allocation, service levels, sales and margins?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Because they are one chain: rosters set response times, response times shape renewals, and renewals set price against cost.</p><p>Treating them separately risks cutting hours that protect renewals, or chasing price on contracts already in breach. Exhibit 1.06 maps the chain; the register nets the cost of evening cover (R-07) against the roster savings.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What does the HHS contract listing mean?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>It records a partial termination or scope reduction on an Avel contract; it does not show the revenue effect or imply poor performance.</p><p>Phase 1 reconciles the contract, its modifications and the invoices before and after. Exhibit 1.19 lists it with other dated policy events.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Why compare Avel with Hicuity?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Because it is the one recent public margin figure for a comparable clinical virtual-care business.</p><p>It frames the range of outcomes (A-12). It is one peer at one point in time, with different services and definitions, and it is not a target for Avel.</p></div></div></div></div>
   </div>
 <div class="cs-section" data-anim>
     <h2 class="cs-headline" id="faq-process" data-subtab="Process">The engagement</h2>
-    <div class="cs-faq-group"><span class="cs-label">Process</span><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">How much leadership time does Phase 1 take?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>No more than five hours: a kick-off, a mid-point validation and a readout.</p><p>The cap is written into the terms. The data contact carries most of the remaining ask, about twelve hours over four weeks (Exhibit 7.06).</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">When does the four-week clock start?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>When the agreed data is usable, not when the proposal is signed.</p><p>If a system cannot be reached, scope narrows by prior agreement and the register states what could not be tested.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What does Avel keep at the end?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>The register, the deep-dives, and a weekly monitor running on its own data.</p><p>The monitor runs live for two consecutive weeks inside Phase 1. Avel keeps it whether or not Phase 2 goes ahead.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What happens after Phase 1?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Avel decides on Phase 2 with the evidence in hand; there is no obligation.</p><p>Phase 2 typically extends the weekly monitor and deepens the highest-value register lines. It is scoped and priced after Phase 1 reports.</p></div></div></div></div>
+    <div class="cs-faq-group"><span class="cs-label">Process</span><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">Will our sponsor or lenders see the work?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Only if Avel chooses to share it.</p><p>Phase 1 outputs belong to Avel under the terms (Exhibit 8.18). Exhibit 7.17 shows how the same reconciled evidence could answer board and lender questions, which saves a second round of data requests if Avel decides to use it that way.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">How much leadership time does Phase 1 take?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>No more than three hours: a 30-minute kick-off, a 45-minute mid-point and a 60-minute readout.</p><p>The cap is written into the terms, and the planned total is 135 minutes (Exhibit 7.15). The data contact carries most of the remaining ask, about eight hours over four weeks (Exhibit 8.06).</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">When does the four-week clock start?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>When the agreed data is usable, not when the proposal is signed.</p><p>If a system cannot be reached, scope narrows by prior agreement and the register states what could not be tested.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What does Avel keep at the end?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>The register, the deep-dives, and a weekly monitor running on its own data.</p><p>The monitor runs live for two consecutive weeks inside Phase 1. Avel keeps it whether or not Phase 2 goes ahead.</p></div></div></div><div class="cs-faq-item"><button class="cs-faq-q" aria-expanded="false">What happens after Phase 1?</button><div class="cs-faq-a"><div class="cs-faq-a-inner"><p>Avel decides on Phase 2 with the evidence in hand; there is no obligation.</p><p>Phase 2 typically extends the weekly monitor and deepens the highest-value register lines. It is scoped and priced after Phase 1 reports.</p></div></div></div></div>
   </div>
 </section>
 </main>
 
 <footer class="cs-footer">
-  <span>CreditSwan · Project Example · Confidential</span>
-  <span>Refreshed 27 Sep 2026 · Version 1.0</span>
+  <span>CreditSwan · Project Avel · Confidential</span>
+  <span>Refreshed 20 Oct 2026 · Second edition</span>
 </footer>
 
 <div class="cs-tip" id="tip" role="status" aria-live="polite"></div>
@@ -2489,7 +2725,7 @@ const csMotion = (() => {
     try { localStorage.setItem('cs-surface', ink ? 'ink' : 'cream'); } catch (e) {}
   });
   try { setSurface(localStorage.getItem('cs-surface') === 'ink'); } catch (e) {}
-  document.getElementById('btn-print').addEventListener('click', () => window.print());
+  document.getElementById('btn-print')?.addEventListener('click', () => window.print());
 
   // Tooltip for any element carrying data-tip
   const tip = document.getElementById('tip');
@@ -2522,11 +2758,12 @@ const csMotion = (() => {
   const F = {
     usd: v => '$' + v.toFixed(1) + 'm', usd0: v => '$' + v.toFixed(0) + 'm', usdk: v => '$' + v.toFixed(0) + 'k', usdr: v => '$' + v.toFixed(0),
     pct: v => v.toFixed(0) + '%', pct1: v => v.toFixed(1) + '%', num: v => Math.round(v).toLocaleString('en-US'), num1: v => v.toFixed(1),
-    min: v => v.toFixed(0) + ' min', hrs: v => v.toFixed(0) + ' h', mo: v => v.toFixed(0) + ' mo', day: v => 'Day ' + v.toFixed(0)
+    min: v => v.toFixed(0) + ' min', hrs: v => v.toFixed(0) + ' h', mo: v => v.toFixed(0) + ' mo', day: v => 'Day ' + v.toFixed(0),
+    hrs1: v => (Math.round(v * 4) / 4) + ' h', x: v => v.toFixed(1) + 'x', lmh: v => ['—', 'Low', 'Medium', 'High'][Math.round(v)] || ''
   };
   csChart.bars(document.getElementById('c1-01'), {"labels": ["FY2021", "FY2024"], "series": [{"name": "Revenue", "values": [45, 92]}, {"name": "Gross profit", "values": [14.4, 35.9]}], "yFormat": F.usd0, "label": "Revenue doubled and gross profit rose 2.5x between FY2021 and FY2024"});
   csChart.dumbbell(document.getElementById('c1-02'), {"labels": ["Sites (hundreds)", "States"], "from": [6, 32], "to": [12, 45], "fromName": "2021 carve-out", "toName": "Latest statement", "xFormat": F.num, "xMax": 48, "label": "The site count has doubled and state coverage widened since the 2021 carve-out"});
-  csChart.gantt(document.getElementById('c1-05'), {"rows": [{"label": "Aquiline ownership", "start": 2021.85, "end": 2022.05, "kind": "secondary", "note": "Transaction finalised Nov 2021"}, {"label": "NightWatch", "start": 2023.0, "end": 2023.2, "note": "Pharmacy"}, {"label": "Fident Health", "start": 2023.7, "end": 2023.9, "note": "Hospitalist"}, {"label": "eSync platform", "start": 2024.33, "end": 2024.53, "kind": "secondary", "note": "Scheduling, workflow, Power BI"}, {"label": "Horizon Virtual", "start": 2024.33, "end": 2024.53, "note": "Hospitalist"}, {"label": "HPM", "start": 2024.95, "end": 2025.15, "note": "Pharmacy"}, {"label": "APC (Amwell)", "start": 2025.02, "end": 2025.22, "note": "Psychiatry"}, {"label": "Alliant channel", "start": 2025.45, "end": 2025.65, "kind": "caution", "note": "230 hospital members"}, {"label": "HealthBook+ AI", "start": 2026.35, "end": 2026.55, "kind": "secondary"}, {"label": "GMR 911 REACT", "start": 2026.42, "end": 2026.62, "kind": "caution", "note": "EMS channel"}], "range": [2021.5, 2027.0], "ticks": [{"at": 2022, "label": "2022"}, {"at": 2023, "label": "2023"}, {"at": 2024, "label": "2024"}, {"at": 2025, "label": "2025"}, {"at": 2026, "label": "2026"}], "today": 2026.75, "label": "Platform, acquisitions and channels have arrived in overlapping waves since 2021"});
+  csChart.gantt(document.getElementById('c1-05'), {"rows": [{"label": "Aquiline ownership", "start": 2021.85, "end": 2022.05, "kind": "secondary", "note": "Transaction finalised Nov 2021"}, {"label": "NightWatch", "start": 2023.0, "end": 2023.2, "note": "Pharmacy"}, {"label": "Fident Health", "start": 2023.7, "end": 2023.9, "note": "Hospitalist"}, {"label": "eSync platform", "start": 2024.33, "end": 2024.53, "kind": "secondary", "note": "Scheduling, workflow, Power BI"}, {"label": "Horizon Virtual", "start": 2024.33, "end": 2024.53, "note": "Hospitalist"}, {"label": "HPM", "start": 2024.95, "end": 2025.15, "note": "Pharmacy"}, {"label": "APC (Amwell)", "start": 2025.02, "end": 2025.22, "note": "Psychiatry"}, {"label": "Alliant channel", "start": 2025.45, "end": 2025.65, "kind": "caution", "note": "230 hospital members"}, {"label": "HealthBook+ AI", "start": 2026.35, "end": 2026.55, "kind": "secondary"}, {"label": "GMR 911 REACT", "start": 2026.42, "end": 2026.62, "kind": "caution", "note": "EMS channel"}], "range": [2021.5, 2027.0], "ticks": [{"at": 2022, "label": "2022"}, {"at": 2023, "label": "2023"}, {"at": 2024, "label": "2024"}, {"at": 2025, "label": "2025"}, {"at": 2026, "label": "2026"}], "today": 2026.8, "label": "Platform, acquisitions and channels have arrived in overlapping waves since 2021"});
   csChart.waterfall(document.getElementById('c1-07'), {"steps": [{"label": "FY24 base", "value": 13.8, "total": true}, {"label": "Rosters", "value": 1.4}, {"label": "OT/locum", "value": 0.7}, {"label": "Pricing", "value": 0.9}, {"label": "Billing", "value": 0.4}, {"label": "Tail", "value": 0.6}, {"label": "Cross-sell", "value": 0.6}, {"label": "Cover", "value": -0.4}, {"label": "Run-rate", "value": 18.0, "total": true}], "yFormat": F.usd0, "label": "An illustrative register of $4.2m would take EBITDA margin from about 15% toward 20%"});
   csChart.heat(document.getElementById('c1-08'), {"rows": ["Emergency", "Pharmacy", "Hospitalist", "Critical care", "Behavioral health", "Senior care", "EMS", "Crisis care", "Specialty clinic", "School health"], "cols": ["Resource", "Service", "Sales", "Margin"], "values": [[4, 4, 3, 3], [2, 3, 3, 4], [3, 3, 3, 4], [3, 2, 2, 3], [5, 5, 3, 4], [3, 2, 3, 2], [3, 1, 4, 4], [3, 2, 4, 4], [2, 2, 2, 2], [4, 1, 3, 3]], "format": F.num, "min": 1, "max": 5, "label": "Behavioral health and emergency carry the most pressure across all four dimensions"});
   csChart.hbars(document.getElementById('c1-10'), {"labels": ["Emergency", "Pharmacy", "Hospitalist", "Critical care", "Behavioral health", "Senior care", "EMS", "Crisis care", "Specialty clinic", "School health"], "series": [{"name": "Revenue", "values": [22.0, 17.5, 14.5, 12.0, 11.5, 5.0, 3.2, 2.6, 2.2, 1.5]}], "xFormat": F.usd, "label": "Emergency, pharmacy and hospitalist make up 59% of illustrative revenue"});
@@ -2578,20 +2815,37 @@ const csMotion = (() => {
   csChart.bars(document.getElementById('c6-15'), {"labels": ["Revenue 2023", "Revenue 2024", "Upfront consideration", "Seller proceeds H1 2026"], "series": [{"name": "$m", "values": [23.968, 22.717, 20.714, 7.027]}], "yFormat": F.usd0, "label": "APC revenue fell 5% in the year before sale; upfront consideration was $20.7m"});
   csChart.multiples(document.getElementById('c6-17'), {"cols": 3, "items": [{"title": "Legacy Avel", "labels": ["Q3 24", "Q4 24", "Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"], "series": [{"name": "GM", "values": [40, 40, 41, 41, 41, 42, 42, 42]}], "yFormat": F.pct, "yMax": 48}, {"title": "NightWatch", "labels": ["Q3 24", "Q4 24", "Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"], "series": [{"name": "GM", "values": [38, 39, 40, 41, 42, 43, 44, 44]}], "yFormat": F.pct, "yMax": 48}, {"title": "HPM", "labels": ["Q3 24", "Q4 24", "Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"], "series": [{"name": "GM", "values": [33, 34, 36, 38, 39, 41, 42, 43]}], "yFormat": F.pct, "yMax": 48}, {"title": "Fident", "labels": ["Q3 24", "Q4 24", "Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"], "series": [{"name": "GM", "values": [30, 30, 31, 30, 31, 31, 30, 31]}], "yFormat": F.pct, "yMax": 48}, {"title": "Horizon", "labels": ["Q3 24", "Q4 24", "Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"], "series": [{"name": "GM", "values": [32, 32, 33, 34, 34, 35, 35, 35]}], "yFormat": F.pct, "yMax": 48}, {"title": "APC", "labels": ["Q3 24", "Q4 24", "Q1 25", "Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"], "series": [{"name": "GM", "values": [37, 37, 36, 35, 34, 33, 33, 32]}], "yFormat": F.pct, "yMax": 48}], "label": "Pharmacy books have converged on legacy margins; APC and Fident have not"});
   csChart.bars(document.getElementById('c6-18'), {"labels": ["Avel FY2024", "Hicuity TTM (adjusted)"], "series": [{"name": "EBITDA margin", "values": [15, 6.9]}], "yFormat": F.pct, "yMax": 20, "label": "Avel's described FY2024 EBITDA margin is about twice Hicuity's trailing adjusted margin"});
-  csChart.gantt(document.getElementById('c7-02'), {"rows": [{"label": "Kick-off and data access", "start": -5, "end": 0, "kind": "secondary", "note": "60–90 min with leadership"}, {"label": "Extraction and reconciliation", "start": 0, "end": 5}, {"label": "Whole-business screen", "start": 3, "end": 10}, {"label": "Mid-point validation", "start": 11, "end": 12, "kind": "caution", "note": "~90 min with leadership"}, {"label": "Deep-dives and replays", "start": 10, "end": 22}, {"label": "Register sizing", "start": 17, "end": 26}, {"label": "Monitor live, two refreshes", "start": 14, "end": 28, "kind": "secondary"}, {"label": "Readout", "start": 27, "end": 28, "kind": "caution", "note": "~60 min"}], "range": [-5, 28], "ticks": [{"at": 0, "label": "Day 0"}, {"at": 7, "label": "Wk 1"}, {"at": 14, "label": "Wk 2"}, {"at": 21, "label": "Wk 3"}, {"at": 28, "label": "Wk 4"}], "today": 0, "label": "The four weeks run screen first, then depth, then the monitor"});
-  csChart.heat(document.getElementById('c7-04'), {"rows": ["H1 Resource", "H2 Service", "H3 Sales", "H4 Margin", "H5 Cash"], "cols": ["eSync", "Payroll · HRIS", "CRM", "Contracts", "Billing · AR", "Credentialing"], "values": [[100, 100, 0, 50, 0, 100], [100, 50, 0, 100, 0, 50], [50, 0, 100, 50, 100, 100], [100, 100, 50, 100, 100, 0], [50, 0, 0, 100, 100, 0]], "format": F.pct, "min": 0, "max": 100, "label": "Every hypothesis is tested from at least three independent record sets"});
-  csChart.hbars(document.getElementById('c7-06'), {"labels": ["Data contact", "Operational sponsor", "Leadership team", "Finance (contracts)", "Clinical lead (guardrails)"], "series": [{"name": "Hours", "values": [12, 6, 5, 4, 2]}], "xFormat": F.hrs, "xMax": 16, "label": "Leadership gives five hours; the data contact carries most of the remaining ask"});
-  csChart.dumbbell(document.getElementById('c7-07'), {"labels": ["Elapsed weeks", "Leadership hours", "Management interviews"], "from": [10, 30, 40], "to": [4, 5, 3], "fromName": "Interview-led (estimate)", "toName": "Phase 1", "xFormat": F.num, "xMax": 48, "label": "Phase 1 compresses an interview-led diagnostic into four weeks and five leadership hours"});
-  csChart.bars(document.getElementById('c7-09'), {"labels": ["H1 Resource", "H2 Service", "H3 Sales", "H4 Margin", "H5 Cash"], "series": [{"name": "Recurring earnings", "values": [2.1, 0, 0.6, 1.9, 0]}, {"name": "One-time cash", "values": [0, 0, 0, 0, 0.6]}, {"name": "Revenue at risk", "values": [0, 3.1, 0, 0, 0]}], "yFormat": F.usd, "label": "In the illustrative register, recurring earnings dominate and one-time cash sits mostly in billing"});
-  csChart.scatter(document.getElementById('c7-10'), {"points": [{"label": "R-04 billing", "x": 1, "y": 0.4}, {"label": "R-02 OT & locum", "x": 3, "y": 0.7}, {"label": "R-01 rosters", "x": 4, "y": 1.4}, {"label": "R-03 pricing", "x": 6, "y": 0.9}, {"label": "R-05 tail contracts", "x": 9, "y": 0.6}, {"label": "R-06 cross-sell", "x": 12, "y": 0.6}], "xFormat": F.mo, "yFormat": F.usd, "xLabel": "Months to first value", "yLabel": "Annualised value", "xMax": 16, "yMax": 1.6, "label": "Higher-value lines take longer to land, which is why first-100-day cash is shown separately"});
-  csChart.control(document.getElementById('c7-12'), {"labels": ["W1", "W2", "W3", "W4", "W5", "W6"], "series": [{"name": "Weekly P90", "values": [9.6, 10.8, 11.4, 10.5, 11.6, 10.9]}], "band": {"upper": [10, 10, 10, 10, 10, 10], "lower": [6, 6, 6, 6, 6, 6]}, "yFormat": F.min, "yMax": 16, "label": "A monitor series tells management what moved, by how much and against what threshold"});
-  csChart.bars(document.getElementById('c7-13'), {"labels": ["Resource", "Service", "Sales", "Margin and cash"], "series": [{"name": "Monitors", "values": [6, 6, 5, 5]}], "yFormat": F.num, "label": "The weekly board carries 22 monitors across the four pressures"});
-  csChart.hbars(document.getElementById('c7-16'), {"labels": ["Whole-business screen", "Mid-point validation", "Deep-dives complete", "Register sized", "Monitor: second refresh", "Readout"], "series": [{"name": "Day", "values": [10, 12, 22, 26, 28, 28]}], "xFormat": F.day, "xMax": 32, "label": "The screen lands by day 10, so leadership sees the whole business before the mid-point"});
+  csChart.gantt(document.getElementById('c8-02'), {"rows": [{"label": "Catalogue review and role", "start": -5, "end": 0, "kind": "secondary", "note": "Data contact only; 30 min kick-off with leadership"}, {"label": "Extraction and reconciliation", "start": 0, "end": 5}, {"label": "Whole-business screen", "start": 3, "end": 10}, {"label": "Mid-point validation", "start": 11, "end": 12, "kind": "caution", "note": "45 min with leadership"}, {"label": "Deep-dives and replays", "start": 10, "end": 22}, {"label": "Register sizing", "start": 17, "end": 26}, {"label": "Monitor live, two refreshes", "start": 14, "end": 28, "kind": "secondary"}, {"label": "Readout", "start": 27, "end": 28, "kind": "caution", "note": "60 min"}], "range": [-5, 28], "ticks": [{"at": 0, "label": "Day 0"}, {"at": 7, "label": "Wk 1"}, {"at": 14, "label": "Wk 2"}, {"at": 21, "label": "Wk 3"}, {"at": 28, "label": "Wk 4"}], "today": 0, "label": "The four weeks run screen first, then depth, then the monitor"});
+  csChart.heat(document.getElementById('c8-04'), {"rows": ["H1 Resource", "H2 Service", "H3 Sales", "H4 Margin", "H5 Cash"], "cols": ["eSync", "Payroll · HRIS", "CRM", "Contracts", "Billing · AR", "Credentialing"], "values": [[100, 100, 0, 50, 0, 100], [100, 50, 0, 100, 0, 50], [50, 0, 100, 50, 100, 100], [100, 100, 50, 100, 100, 0], [50, 0, 0, 100, 100, 0]], "format": F.pct, "min": 0, "max": 100, "label": "Every hypothesis is tested from at least three independent record sets"});
+  csChart.hbars(document.getElementById('c8-06'), {"labels": ["Data contact", "Finance analyst (contracts)", "Leadership team", "Clinical lead (guardrails)"], "series": [{"name": "Hours", "values": [8, 3, 3, 1]}], "xFormat": F.hrs, "xMax": 10, "label": "Leadership gives at most three hours; Avel's whole team gives about fifteen"});
+  csChart.dumbbell(document.getElementById('c8-07'), {"labels": ["Elapsed weeks", "Leadership hours", "Management interviews"], "from": [10, 30, 40], "to": [4, 3, 3], "fromName": "Interview-led (estimate)", "toName": "Phase 1", "xFormat": F.num, "xMax": 48, "label": "Phase 1 compresses an interview-led diagnostic into four weeks and three leadership hours"});
+  csChart.bars(document.getElementById('c8-09'), {"labels": ["H1 Resource", "H2 Service", "H3 Sales", "H4 Margin", "H5 Cash"], "series": [{"name": "Recurring earnings", "values": [2.1, 0, 0.6, 1.9, 0]}, {"name": "One-time cash", "values": [0, 0, 0, 0, 0.6]}, {"name": "Revenue at risk", "values": [0, 3.1, 0, 0, 0]}], "yFormat": F.usd, "label": "In the illustrative register, recurring earnings dominate and one-time cash sits mostly in billing"});
+  csChart.scatter(document.getElementById('c8-10'), {"points": [{"label": "R-04 billing", "x": 1, "y": 0.4}, {"label": "R-02 OT & locum", "x": 3, "y": 0.7}, {"label": "R-01 rosters", "x": 4, "y": 1.4}, {"label": "R-03 pricing", "x": 6, "y": 0.9}, {"label": "R-05 tail contracts", "x": 9, "y": 0.6}, {"label": "R-06 cross-sell", "x": 12, "y": 0.6}], "xFormat": F.mo, "yFormat": F.usd, "xLabel": "Months to first value", "yLabel": "Annualised value", "xMax": 16, "yMax": 1.6, "label": "Higher-value lines take longer to land, which is why first-100-day cash is shown separately"});
+  csChart.control(document.getElementById('c8-12'), {"labels": ["W1", "W2", "W3", "W4", "W5", "W6"], "series": [{"name": "Weekly P90", "values": [9.6, 10.8, 11.4, 10.5, 11.6, 10.9]}], "band": {"upper": [10, 10, 10, 10, 10, 10], "lower": [6, 6, 6, 6, 6, 6]}, "yFormat": F.min, "yMax": 16, "label": "A monitor series tells management what moved, by how much and against what threshold"});
+  csChart.bars(document.getElementById('c8-13'), {"labels": ["Resource", "Service", "Sales", "Margin and cash"], "series": [{"name": "Monitors", "values": [6, 6, 5, 5]}], "yFormat": F.num, "label": "The weekly board carries 22 monitors across the four pressures"});
+  csChart.hbars(document.getElementById('c8-16'), {"labels": ["Whole-business screen", "Mid-point validation", "Deep-dives complete", "Register sized", "Monitor: second refresh", "Readout"], "series": [{"name": "Day", "values": [10, 12, 22, 26, 28, 28]}], "xFormat": F.day, "xMax": 32, "label": "The screen lands by day 10, so leadership sees the whole business before the mid-point"});
+
+  csChart.gantt(document.getElementById('c1-21'), {"rows": [{"label": "Doug Duskin \u00b7 CEO", "start": 2021.84, "end": 2026.8, "kind": "secondary", "note": "CEO since Nov 2021"}, {"label": "Martainn Lenhardt \u00b7 CFO", "start": 2025.56, "end": 2026.8, "note": "Appointed 23 Jul 2025"}, {"label": "Pat Gundersen \u00b7 CRO", "start": 2025.92, "end": 2026.8, "note": "Appointed 2 Dec 2025"}, {"label": "Rich Sanders \u00b7 interim COO", "start": 2025.9, "end": 2026.28, "kind": "caution", "note": "Interim for several months; start not public"}, {"label": "Rich Sanders \u00b7 COO", "start": 2026.28, "end": 2026.8, "note": "Confirmed 13 Apr 2026"}], "range": [2021.5, 2027.0], "ticks": [{"at": 2022, "label": "2022"}, {"at": 2023, "label": "2023"}, {"at": 2024, "label": "2024"}, {"at": 2025, "label": "2025"}, {"at": 2026, "label": "2026"}], "today": 2026.8, "label": "Three of the four operating executives have been in seat for fifteen months or less"});
+  csChart.hbars(document.getElementById('c1-22'), {"labels": ["Texas", "Montana", "Kansas", "Nebraska", "Iowa", "Wyoming", "North Dakota", "Minnesota", "South Dakota"], "series": [{"name": "FY2026 award", "values": [281, 234, 222, 219, 209, 205, 199, 193, 189]}], "xMax": 300, "label": "FY2026 Rural Health Transformation awards in Avel's core region", "xFormat": F.usd0});
+  csChart.bars(document.getElementById('c1-23'), {"labels": ["APC to Avel (Jan 2025)", "Hicuity to DocGo (agreed Aug 2026)"], "series": [{"name": "Consideration \u00f7 trailing revenue", "values": [1.1, 0.8]}], "yMax": 1.2, "label": "Recent tele-acute transactions priced at or near 1x trailing revenue", "yFormat": F.x});
+  csChart.bullet(document.getElementById('c7-02'), {"labels": ["Data contact", "Finance analyst", "Leadership team", "Clinical lead"], "actual": [8, 3, 2.25, 1], "target": [10, 4, 3, 2], "xMax": 12, "label": "Planned hours against the cap, by role", "xFormat": F.hrs1});
+  csChart.dumbbell(document.getElementById('c7-03'), {"labels": ["Avel hours, all roles", "Leadership hours", "Access grants to set up"], "from": [29, 5, 8], "to": [15, 3, 1], "fromName": "First edition", "toName": "This edition", "xMax": 32, "label": "Avel's total ask, first edition against this edition", "xFormat": F.num});
+  csChart.gantt(document.getElementById('c7-05'), {"rows": [{"label": "Tier 0 \u00b7 catalogue review", "start": -6, "end": -5, "kind": "secondary", "note": "45 min, names only"}, {"label": "Role and views created", "start": -4, "end": -1, "kind": "secondary", "note": "Avel IT, ~2 h"}, {"label": "Tier 1 \u00b7 operational views", "start": 0, "end": 28, "note": "Read-only"}, {"label": "Tier 2 \u00b7 contracts export", "start": 1, "end": 5, "kind": "caution", "note": "One export"}, {"label": "Weekly mapping slot", "start": 2, "end": 26, "kind": "secondary", "note": "30 min a week, data contact"}], "range": [-7, 29], "ticks": [{"at": 0, "label": "Day 0", "strong": true}, {"at": 7, "label": "Wk 1"}, {"at": 14, "label": "Wk 2"}, {"at": 21, "label": "Wk 3"}, {"at": 28, "label": "Wk 4"}], "today": 0, "label": "Access plan, days from usable data"});
+  csChart.stacked(document.getElementById('c7-06'), {"labels": ["H1 Resource", "H2 Service", "H3 Sales", "H4 Margin", "H5 Cash"], "series": [{"name": "Tier 1 views", "values": [100, 95, 90, 60, 70]}, {"name": "Tier 2 contracts", "values": [0, 5, 10, 40, 30]}], "yMax": 100, "label": "Share of each hypothesis test supported by each tier", "yFormat": F.pct});
+  csChart.heat(document.getElementById('c7-08'), {"rows": ["A \u00b7 In place", "B \u00b7 Secure extract", "C \u00b7 Power BI read"], "cols": ["In Avel", "IT ease", "Speed", "Depth"], "values": [[3, 2, 2, 3], [1, 2, 3, 3], [3, 3, 3, 1]], "min": 0, "max": 3, "label": "Access options against what matters to Avel", "format": F.lmh});
+  csChart.hbars(document.getElementById('c7-10'), {"labels": ["Operational", "Financial", "Workforce, pseudonymised", "Encounter timing, no patient key", "Patient identifiers", "Clinical content"], "series": [{"name": "Fields", "values": [19, 14, 7, 6, 0, 0]}], "xMax": 20, "label": "Fields in the minimum data set by sensitivity class", "xFormat": F.num});
+  csChart.gantt(document.getElementById('c7-12'), {"rows": [{"label": "Read-only role active", "start": -2, "end": 45, "note": "Day -2 to day 45"}, {"label": "Query log to Avel IT", "start": 7, "end": 28, "kind": "secondary", "note": "Days 7, 14, 21, 28"}, {"label": "Same-day revocation", "start": -2, "end": 45, "kind": "caution", "note": "Available throughout"}, {"label": "Role expires", "start": 45, "end": 46, "kind": "secondary", "note": "Automatic"}, {"label": "Deletion certified", "start": 46, "end": 50, "kind": "secondary", "note": "Unless Phase 2 proceeds"}], "range": [-4, 52], "ticks": [{"at": 0, "label": "Day 0", "strong": true}, {"at": 14, "label": "Wk 2"}, {"at": 28, "label": "Wk 4"}, {"at": 45, "label": "Day 45"}], "label": "Access control timeline"});
+  csChart.waterfall(document.getElementById('c7-15'), {"steps": [{"label": "Kick-off", "value": 30}, {"label": "Mid-point", "value": 45}, {"label": "Readout", "value": 60}, {"label": "Planned", "value": 135, "total": true}, {"label": "Unused", "value": 45}, {"label": "Cap", "value": 180, "total": true}], "label": "Leadership minutes by meeting against the cap", "yFormat": F.num});
+  csChart.hbars(document.getElementById('c7-16'), {"labels": ["Data map agreed (Tier 0)", "Data usable; clock starts", "Whole-business screen", "Contract and pricing findings", "Readout"], "series": [{"name": "Days from signature", "values": [3, 10, 20, 25, 38]}], "xMax": 40, "label": "Days from signature to each milestone", "xFormat": F.day});
+  document.querySelectorAll('.cs-exhibit').forEach(ex => { const b = ex.querySelector('.cs-basis'), no = ex.querySelector('.cs-exhibit-no');
+    if (b && no && /Illustrative/.test(b.textContent) && !no.querySelector('.cs-badge')) no.insertAdjacentHTML('beforeend', ' <em class="cs-badge">Illustrative</em>'); });
 
   measure();
   route();
   csMotion.observe(document);
 })();
 </script>
-</body>
-</html>
+
+
+
+</body></html>

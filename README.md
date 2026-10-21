@@ -1,13 +1,4 @@
-# Avel eCare — Phase 1 diagnostic preview (CreditSwan)
+# Avel diagnostic preview, second edition
 
-Static site. No build step, no dependencies.
-
-## Deploy
-- Drag-and-drop: vercel.com/new → upload this folder (or the zip, unzipped).
-- CLI: `npx vercel --prod` from inside this folder. Framework preset: Other. Build command: none. Output directory: `.`
-
-## Notes
-- Single page: `index.html` (all CSS/JS inline). Fonts load from Google Fonts.
-- Search engines blocked (robots.txt, X-Robots-Tag, meta robots) because the packet is confidential.
-- The URL is public to anyone who has it. For access control, enable Vercel Deployment Protection (password or Vercel Authentication) in Project Settings.
-- Deep links work: `/#resource`, `/#margins/mg-billing`, etc.
+Static site, no build step. Deploy with `npx vercel --prod` from this folder, or drag the folder into vercel.com/new (framework: Other, no build command).
+The packet is confidential: turn on Deployment Protection in the Vercel project before sharing the link.
